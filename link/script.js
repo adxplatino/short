@@ -129,11 +129,8 @@ function getTiempoCaptcha(e){
 }
 
 var setPagina = window.location.search;
-
 var indice = setPagina.indexOf("&m=1");
-// Cortar desde 0 hasta la aparición del primer espacio
 var extraida = setPagina.substring(0, indice);
-
 
 if (keyword.includes(extraida)) {
     sessionStorage.setItem("setPagina", extraida);
