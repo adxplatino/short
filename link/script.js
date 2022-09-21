@@ -58,7 +58,10 @@ var keyword = [
 "?manual-electricidad-basica",
 "?grupo-privado-whatsapp",
 "?como-tener-wifi-gratis",
-"?manual-instalacion-sistema-fotovoltaico"  
+"?manual-instalacion-sistema-fotovoltaico",
+"?DBSSHLATHD-Drive",
+"?DBSSHLATHD-Media",
+"?DBSSHLATHD-Mega"
 ]
 
 var randomUrl = 
@@ -193,6 +196,36 @@ setAdsUp();
 setAdsDown();
 function getLink() {
             location.href = "https://drive.google.com/file/d/1FvgxW-_S2cSvTW4x1NQOvr-ZoPMwxcPL";
+}
+  
+}else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Drive") {
+    sessionStorage.clear(setTimeout(1000));
+document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+setAdsUp();
+setAdsDown();
+function getLink() {
+            location.href = "https://drive.google.com/file/d/1SJwUDgJFGaHU4nrMjMZYZz3bEAa9EBQn";
+}
+  
+}else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Media") {
+    sessionStorage.clear(setTimeout(1000));
+document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+setAdsUp();
+setAdsDown();
+function getLink() {
+            location.href = "https://www.mediafire.com/file/8srntxakradpy4c/DBSSHLAT.mp4/file";
+}
+  
+}else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Mega") {
+    sessionStorage.clear(setTimeout(1000));
+document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+setAdsUp();
+setAdsDown();
+function getLink() {
+            location.href = "https://mega.nz/file/C7ITVCgI#4tM9xqqsgglmln7h4qVLG1W4IzD4fMUlDjVW2Lf-HcI";
 }
   
 }else {
