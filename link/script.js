@@ -56,7 +56,8 @@ document.getElementById('adsContenedor2').appendChild(inlineScript);
 var keyword = [
 "?manual-excel-basico",
 "?manual-electricidad-basica",
-"?grupo-privado-whatsapp"
+"?grupo-privado-whatsapp",
+"?como-tener-wifi-gratis" 
 ]
 
 var randomUrl = 
@@ -161,6 +162,8 @@ setAdsUp();
 setAdsDown();
 function getLink() {
             location.href = "https://drive.google.com/file/d/1RY8SzQovsIOY4yzxi2q6n6ttAB93oneR";
+}
+  
 }else if (sessionStorage.getItem("getPagina") === "?grupo-privado-whatsapp") {
     sessionStorage.clear(setTimeout(1000));
 document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
@@ -169,8 +172,19 @@ setAdsUp();
 setAdsDown();
 function getLink() {
             location.href = "https://www.infoproyectos.com/p/result.html?q=grupos%20whatsapp%20amistad#gsc.tab=0&gsc.q=grupos%20whatsapp%20amistad&gsc.page=1";
-}  
-} else {
+}
+  
+}else if (sessionStorage.getItem("getPagina") === "?como-tener-wifi-gratis") {
+    sessionStorage.clear(setTimeout(1000));
+document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+setAdsUp();
+setAdsDown();
+function getLink() {
+            location.href = "https://www.infoproyectos.com/p/result.html?q=grupos%20whatsapp%20amistad#gsc.tab=0&gsc.q=grupos%20whatsapp%20amistad&gsc.page=1";
+}
+  
+}else {
     console.log("No hay link de descarga");
 }
 }
