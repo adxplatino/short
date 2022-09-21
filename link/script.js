@@ -136,101 +136,108 @@ if (keyword.includes(extraida)) {
     sessionStorage.setItem("setPagina", extraida);
     var i = parseInt(Math.random() * randomUrl.length);
     location.href = randomUrl[i];
-} else {
 
-if (sessionStorage.getItem("setPagina")) {
-var getPagina = sessionStorage.getItem("setPagina");
-sessionStorage.clear(setTimeout(1000));
-document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div class="card-body text-center"><p><b>Wait a moment please...</b> <br /><img class="mx-auto d-block mr-3" src="https://lh3.googleusercontent.com/P4sRiiGQpoTx0-iKsaEtPvQUH7xlJGZt03gHh3YUL2s25-6hGubUCklhbfhbZSkCgS66FuMOfIVmnQJOEdHm9PF2c2YPqLwlnNiVYQ-QOw=s400-rw-no" style="height: 30px;"></p></div></br><center><div id="adsContenedor2"></div></center></br><div style="text-align: center;"><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div><br /></div></div>';
-getTiempoCaptcha('Click here to continue');
-setAdsUp();
-setAdsDown();
-function getLink() {
-            location.reload();
-            sessionStorage.setItem("getPagina", getPagina);
-}
+} else if(keyword.includes(setPagina)) {
+    sessionStorage.setItem("setPagina", setPagina);
+    var i = parseInt(Math.random() * randomUrl.length);
+    location.href = randomUrl[i];
 
-}else if (sessionStorage.getItem("getPagina") === "?manual-electricidad-basica") {
-sessionStorage.clear(setTimeout(1000));
-document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
-getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-setAdsUp();
-setAdsDown();
-function getLink() {
-            location.href = "https://drive.google.com/file/d/1FX2JxEL5CQzrS13SPxeZbJuzCgofMZlA";
-}
+}else{
 
-}else if (sessionStorage.getItem("getPagina") === "?manual-excel-basico") {
-    sessionStorage.clear(setTimeout(1000));
-document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
-getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-setAdsUp();
-setAdsDown();
-function getLink() {
-            location.href = "https://drive.google.com/file/d/1RY8SzQovsIOY4yzxi2q6n6ttAB93oneR";
-}
-  
-}else if (sessionStorage.getItem("getPagina") === "?grupo-privado-whatsapp") {
-    sessionStorage.clear(setTimeout(1000));
-document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
-getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-setAdsUp();
-setAdsDown();
-function getLink() {
-            location.href = "https://www.infoproyectos.com/p/result.html?q=grupos%20whatsapp%20amistad#gsc.tab=0&gsc.q=grupos%20whatsapp%20amistad&gsc.page=1";
-}
-  
-}else if (sessionStorage.getItem("getPagina") === "?como-tener-wifi-gratis") {
-    sessionStorage.clear(setTimeout(1000));
-document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
-getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-setAdsUp();
-setAdsDown();
-function getLink() {
-            location.href = "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j";
-}
-  
-}else if (sessionStorage.getItem("getPagina") === "?manual-instalacion-sistema-fotovoltaico") {
-    sessionStorage.clear(setTimeout(1000));
-document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
-getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-setAdsUp();
-setAdsDown();
-function getLink() {
-            location.href = "https://drive.google.com/file/d/1FvgxW-_S2cSvTW4x1NQOvr-ZoPMwxcPL";
-}
-  
-}else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Drive") {
-    sessionStorage.clear(setTimeout(1000));
-document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
-getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-setAdsUp();
-setAdsDown();
-function getLink() {
-            location.href = "https://drive.google.com/file/d/1SJwUDgJFGaHU4nrMjMZYZz3bEAa9EBQn";
-}
-  
-}else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Media") {
-    sessionStorage.clear(setTimeout(1000));
-document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
-getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-setAdsUp();
-setAdsDown();
-function getLink() {
-            location.href = "https://www.mediafire.com/file/8srntxakradpy4c/DBSSHLAT.mp4/file";
-}
-  
-}else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Mega") {
-    sessionStorage.clear(setTimeout(1000));
-document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
-getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-setAdsUp();
-setAdsDown();
-function getLink() {
-            location.href = "https://mega.nz/file/C7ITVCgI#4tM9xqqsgglmln7h4qVLG1W4IzD4fMUlDjVW2Lf-HcI";
-}
-  
-}else {
-    console.log("No hay link de descarga");
-}
+    if (sessionStorage.getItem("setPagina")) {
+        var getPagina = sessionStorage.getItem("setPagina");
+        sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div class="card-body text-center"><p><b>Wait a moment please...</b> <br /><img class="mx-auto d-block mr-3" src="https://lh3.googleusercontent.com/P4sRiiGQpoTx0-iKsaEtPvQUH7xlJGZt03gHh3YUL2s25-6hGubUCklhbfhbZSkCgS66FuMOfIVmnQJOEdHm9PF2c2YPqLwlnNiVYQ-QOw=s400-rw-no" style="height: 30px;"></p></div></br><center><div id="adsContenedor2"></div></center></br><div style="text-align: center;"><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div><br /></div></div>';
+        getTiempoCaptcha('Click here to continue');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.reload();
+                    sessionStorage.setItem("getPagina", getPagina);
+        }
+        
+        }else if (sessionStorage.getItem("getPagina") === "?manual-electricidad-basica") {
+        sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.href = "https://drive.google.com/file/d/1FX2JxEL5CQzrS13SPxeZbJuzCgofMZlA";
+        }
+        
+        }else if (sessionStorage.getItem("getPagina") === "?manual-excel-basico") {
+            sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.href = "https://drive.google.com/file/d/1RY8SzQovsIOY4yzxi2q6n6ttAB93oneR";
+        }
+          
+        }else if (sessionStorage.getItem("getPagina") === "?grupo-privado-whatsapp") {
+            sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.href = "https://www.infoproyectos.com/p/result.html?q=grupos%20whatsapp%20amistad#gsc.tab=0&gsc.q=grupos%20whatsapp%20amistad&gsc.page=1";
+        }
+          
+        }else if (sessionStorage.getItem("getPagina") === "?como-tener-wifi-gratis") {
+            sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.href = "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j";
+        }
+          
+        }else if (sessionStorage.getItem("getPagina") === "?manual-instalacion-sistema-fotovoltaico") {
+            sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.href = "https://drive.google.com/file/d/1FvgxW-_S2cSvTW4x1NQOvr-ZoPMwxcPL";
+        }
+          
+        }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Drive") {
+            sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.href = "https://drive.google.com/file/d/1SJwUDgJFGaHU4nrMjMZYZz3bEAa9EBQn";
+        }
+          
+        }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Media") {
+            sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.href = "https://www.mediafire.com/file/8srntxakradpy4c/DBSSHLAT.mp4/file";
+        }
+          
+        }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Mega") {
+            sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.href = "https://mega.nz/file/C7ITVCgI#4tM9xqqsgglmln7h4qVLG1W4IzD4fMUlDjVW2Lf-HcI";
+        }
+          
+        }else {
+            console.log("No hay link de descarga");
+        }    
+
 }
