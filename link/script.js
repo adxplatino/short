@@ -181,7 +181,7 @@ getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
 setAdsUp();
 setAdsDown();
 function getLink() {
-            location.href = "https://www.infoproyectos.com/p/result.html?q=grupos%20whatsapp%20amistad#gsc.tab=0&gsc.q=grupos%20whatsapp%20amistad&gsc.page=1";
+            location.href = "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j";
 }
   
 }else {
