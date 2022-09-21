@@ -197,7 +197,7 @@ function getLink() {
             location.href = "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j";
 }
   
-}else if (sessionStorage.getItem("getPagina") === "?manual-instalacion-sistema-fotovoltaico" || "?manual-instalacion-sistema-fotovoltaico&m=1") {
+}else if (sessionStorage.getItem("getPagina") == "?manual-instalacion-sistema-fotovoltaico" || "?manual-instalacion-sistema-fotovoltaico&m=1") {
     sessionStorage.clear(setTimeout(1000));
 document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
 getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
