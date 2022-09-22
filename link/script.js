@@ -98,7 +98,7 @@ function getTiempo(e){
                         timer.text(time / 1000);
                         if (time <= 0) {
                             clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center><div style="text-align: center;"><button onClick="getLink();" class="btn btn-primary"   m-2="" style="width: 300px;"><b>'+e+'</b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
+                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"<center><div id="adsContenedor"></div></center><div style="text-align: center;"><button onClick="getLink();" class="btn btn-primary"   m-2="" style="width: 300px;"><b>'+e+'</b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
                             setAdsUp();
                             setAdsDown();
                         }
@@ -119,7 +119,7 @@ function getTiempoCaptcha(e){
                         timer.text(time / 1000);
                         if (time <= 0) {
                             clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><div class="card-body text-center"><p><b>Please solve the captcha below to proceed to the destination page.</b></p><center><div id="adsContenedor"></div></center><div class="g-recaptcha m-2" data-callback="CaptchaChecked" data-sitekey="6LeYowYaAAAAAB97jxMiic4E6kwBWjD3_Zvxdmin" style="display: inline-block;"></div></div><center><div id="adsContenedor2"></div></center><div style="text-align: center;"><button onClick="getLink();" btn-captcha="" class="btn btn-primary" disabled="disabled" id="enlacecaptcha" m-2="" style="width: 300px;"><b>'+e+'</b></button></div><br /></div><div id="captchascript"></div></section>';
+                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><p><b>Please solve the captcha below to proceed to the destination page.</b></p><center><div id="adsContenedor"></div></center><div class="g-recaptcha m-2" data-callback="CaptchaChecked" data-sitekey="6LeYowYaAAAAAB97jxMiic4E6kwBWjD3_Zvxdmin" style="display: inline-block;"></div></div><center><div id="adsContenedor2"></div></center><div style="text-align: center;"><button onClick="getLink();" btn-captcha="" class="btn btn-primary" disabled="disabled" id="enlacecaptcha" m-2="" style="width: 300px;"><b>'+e+'</b></button></div><br /></div><div id="captchascript"></div></section>';
                             captcha();
                             setAdsUp();
                             setAdsDown();
@@ -158,7 +158,7 @@ if (keyword.includes(extraida)) {
         
         }else if (sessionStorage.getItem("getPagina") === "?manual-electricidad-basica") {
         sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"<center><div id="adsContenedor"></div></center><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
@@ -168,7 +168,7 @@ if (keyword.includes(extraida)) {
         
         }else if (sessionStorage.getItem("getPagina") === "?manual-excel-basico") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"<center><div id="adsContenedor"></div></center><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
@@ -178,7 +178,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?grupo-privado-whatsapp") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"<center><div id="adsContenedor"></div></center><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
@@ -188,7 +188,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?como-tener-wifi-gratis") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"<center><div id="adsContenedor"></div></center><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
@@ -198,7 +198,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?manual-instalacion-sistema-fotovoltaico") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"<center><div id="adsContenedor"></div></center><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
@@ -208,7 +208,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Drive") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"<center><div id="adsContenedor"></div></center><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
@@ -218,7 +218,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Media") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"<center><div id="adsContenedor"></div></center><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
@@ -228,7 +228,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Mega") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"<center><div id="adsContenedor"></div></center><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
