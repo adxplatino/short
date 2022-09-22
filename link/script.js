@@ -87,7 +87,7 @@ var randomUrl =
 function getTiempo(e){
     var timer = $('#timer');
                 window.setTimeout(function () {
-                    let time = 20000,
+                    let time = 10000,
                         delta = 1000,
                         tid;
                     tid = setInterval(function () {
@@ -108,7 +108,7 @@ function getTiempo(e){
 function getTiempoCaptcha(e){
     var timer = $('#timer');
                 window.setTimeout(function () {
-                    let time = 20000,
+                    let time = 10000,
                         delta = 1000,
                         tid;
                     tid = setInterval(function () {
@@ -147,7 +147,7 @@ if (keyword.includes(extraida)) {
     if (sessionStorage.getItem("setPagina")) {
         var getPagina = sessionStorage.getItem("setPagina");
         sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div class="card-body text-center"><p><b>Wait a moment please...</b> <br /><img class="mx-auto d-block mr-3" src="https://lh3.googleusercontent.com/P4sRiiGQpoTx0-iKsaEtPvQUH7xlJGZt03gHh3YUL2s25-6hGubUCklhbfhbZSkCgS66FuMOfIVmnQJOEdHm9PF2c2YPqLwlnNiVYQ-QOw=s400-rw-no" style="height: 30px;"></p></div></br><center><div id="adsContenedor2"></div></center><div style="text-align: center;"><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div><br /></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><p><b>Wait a moment please...</b></p></div><center><div id="adsContenedor"></div></center><div style="text-align: center;"><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center><br /></div></section>';
         getTiempoCaptcha('Click here to continue');
         setAdsUp();
         setAdsDown();
@@ -158,7 +158,7 @@ if (keyword.includes(extraida)) {
         
         }else if (sessionStorage.getItem("getPagina") === "?manual-electricidad-basica") {
         sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
