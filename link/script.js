@@ -98,7 +98,7 @@ function getTiempo(e){
                         timer.text(time / 1000);
                         if (time <= 0) {
                             clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div style="text-align: center;"><button onClick="getLink();" class="btn btn-primary"   m-2="" style="width: 300px;"><b>'+e+'</b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
+                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center><div style="text-align: center;"><button onClick="getLink();" class="btn btn-primary"   m-2="" style="width: 300px;"><b>'+e+'</b></button></div></br><center><div id="adsContenedor2"></div></center></br></div></section>';
                             setAdsUp();
                             setAdsDown();
                         }
@@ -119,7 +119,7 @@ function getTiempoCaptcha(e){
                         timer.text(time / 1000);
                         if (time <= 0) {
                             clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div class="card-body text-center"><p><b>Almost there...</b> <br />We just need to verify that you are a real human.</p><p>Please check the box below in order to continue.</p><div class="g-recaptcha m-2" data-callback="CaptchaChecked" data-sitekey="6LeYowYaAAAAAB97jxMiic4E6kwBWjD3_Zvxdmin" style="display: inline-block;"></div></div></br><center><div id="adsContenedor2"></div></center></br><br /><div style="text-align: center;"><button onClick="getLink();" btn-captcha="" class="btn btn-primary" disabled="disabled" id="enlacecaptcha" m-2="" style="width: 300px;"><b>'+e+'</b></button></div><br /></div><div id="captchascript"></div></section>';
+                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div class="card-body text-center"><p><b>Almost there...</b> <br />We just need to verify that you are a real human.</p><p>Please check the box below in order to continue.</p><div class="g-recaptcha m-2" data-callback="CaptchaChecked" data-sitekey="6LeYowYaAAAAAB97jxMiic4E6kwBWjD3_Zvxdmin" style="display: inline-block;"></div></div></br><center><div id="adsContenedor2"></div></center><div style="text-align: center;"><button onClick="getLink();" btn-captcha="" class="btn btn-primary" disabled="disabled" id="enlacecaptcha" m-2="" style="width: 300px;"><b>'+e+'</b></button></div><br /></div><div id="captchascript"></div></section>';
                             captcha();
                             setAdsUp();
                             setAdsDown();
@@ -147,7 +147,7 @@ if (keyword.includes(extraida)) {
     if (sessionStorage.getItem("setPagina")) {
         var getPagina = sessionStorage.getItem("setPagina");
         sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div class="card-body text-center"><p><b>Wait a moment please...</b> <br /><img class="mx-auto d-block mr-3" src="https://lh3.googleusercontent.com/P4sRiiGQpoTx0-iKsaEtPvQUH7xlJGZt03gHh3YUL2s25-6hGubUCklhbfhbZSkCgS66FuMOfIVmnQJOEdHm9PF2c2YPqLwlnNiVYQ-QOw=s400-rw-no" style="height: 30px;"></p></div></br><center><div id="adsContenedor2"></div></center></br><div style="text-align: center;"><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div><br /></div></div>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"></br><center><div id="adsContenedor"></div></center></br><div class="card-body text-center"><p><b>Wait a moment please...</b> <br /><img class="mx-auto d-block mr-3" src="https://lh3.googleusercontent.com/P4sRiiGQpoTx0-iKsaEtPvQUH7xlJGZt03gHh3YUL2s25-6hGubUCklhbfhbZSkCgS66FuMOfIVmnQJOEdHm9PF2c2YPqLwlnNiVYQ-QOw=s400-rw-no" style="height: 30px;"></p></div></br><center><div id="adsContenedor2"></div></center><div style="text-align: center;"><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div><br /></div></div>';
         getTiempoCaptcha('Click here to continue');
         setAdsUp();
         setAdsDown();
