@@ -161,7 +161,7 @@ if (keyword.includes(extraida)) {
         
         }else if (sessionStorage.getItem("getPagina") === "?manual-electricidad-basica") {
         sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div<h2>MANUAL DE ELECTRICIDAD BASICA PDF</h2></center><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
