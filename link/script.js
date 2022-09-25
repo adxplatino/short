@@ -101,7 +101,7 @@ function getTiempo(e){
                         timer.text(time / 1000);
                         if (time <= 0) {
                             clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><button onClick="getLink();" class="btn btn-primary" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
+                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b></b></h2><button onClick="getLink();" class="btn btn-primary" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
                             setAdsUp();
                             setAdsDown();
                         }
