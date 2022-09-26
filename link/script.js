@@ -103,9 +103,7 @@ function getTiempo(e){
                             clearInterval(tid); 
                             document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button onClick="getLink();" class="btn btn-primary" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
                             setAdsUp();
-                            setAdsDown();
-                            setTitulo();
-                            
+                            setAdsDown();  
                         }
                     }, delta);
                 }, 500);
@@ -128,7 +126,6 @@ function getTiempoCaptcha(e){
                             captcha();
                             setAdsUp();
                             setAdsDown();
-                            setTitulo();
                         }
                     }, delta);
                 }, 500);
@@ -152,8 +149,14 @@ if (keyword.includes(extraida)) {
 
     if (sessionStorage.getItem("setPagina")) {
         var getPagina = sessionStorage.getItem("setPagina");
-        sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
+        if (sessionStorage.getItem("setPagina") === "?manual-electricidad-basica") {
+         document.getElementById("titulot").innerHTML = '<b>MANUAL DE ELECTRICIDAD BASICA PDF</b>';
+        }else{
+        console.log("No hay titulo");
+        }
+        
+        sessionStorage.clear(setTimeout(1000));
         getTiempoCaptcha('Click here to continue');
         setAdsUp();
         setAdsDown();
@@ -168,9 +171,6 @@ if (keyword.includes(extraida)) {
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
-        function setTitulo() {
-                    document.getElementById("titulot").innerHTML = '<b>MANUAL DE ELECTRICIDAD BASICA PDF</b>';
-        } 
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1FX2JxEL5CQzrS13SPxeZbJuzCgofMZlA";
         }
