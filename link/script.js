@@ -153,7 +153,7 @@ if (keyword.includes(extraida)) {
     sessionStorage.setItem("setPagina", setPagina);
     var i = parseInt(Math.random() * randomUrl.length);
     location.href = randomUrl[i];
-
+                            setTitulo();
 }else{
 
     if (sessionStorage.getItem("setPagina")) {
