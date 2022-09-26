@@ -101,9 +101,11 @@ function getTiempo(e){
                         timer.text(time / 1000);
                         if (time <= 0) {
                             clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulot"></h2><button onClick="getLink();" class="btn btn-primary" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
+                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button onClick="getLink();" class="btn btn-primary" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
                             setAdsUp();
                             setAdsDown();
+                            setTitulo();
+                            
                         }
                     }, delta);
                 }, 500);
@@ -122,10 +124,11 @@ function getTiempoCaptcha(e){
                         timer.text(time / 1000);
                         if (time <= 0) {
                             clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><p><b>Please solve the captcha below to proceed to the destination page.</b></p><center><div id="adsContenedor"></div></center><div class="g-recaptcha m-2" data-callback="CaptchaChecked" data-sitekey="6LeYowYaAAAAAB97jxMiic4E6kwBWjD3_Zvxdmin" style="display: inline-block;"></div></br><button onClick="getLink();" btn-captcha="" class="btn btn-primary" disabled="disabled" id="enlacecaptcha" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br><center><div id="adsContenedor2"></div></center></div></div><div id="captchascript"></div></section>';
+                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><p><b>Please solve the captcha below to proceed to the destination page.</b></p><center><div id="adsContenedor"></div></center><div class="g-recaptcha m-2" data-callback="CaptchaChecked" data-sitekey="6LeYowYaAAAAAB97jxMiic4E6kwBWjD3_Zvxdmin" style="display: inline-block;"></div></br><h2 text-center id="titulo"></h2><button onClick="getLink();" btn-captcha="" class="btn btn-primary" disabled="disabled" id="enlacecaptcha" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br><center><div id="adsContenedor2"></div></center></div></div><div id="captchascript"></div></section>';
                             captcha();
                             setAdsUp();
                             setAdsDown();
+                            setTitulo();
                         }
                     }, delta);
                 }, 500);
@@ -165,7 +168,9 @@ if (keyword.includes(extraida)) {
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
-        document.getElementById("titulot").innerHTML = '<b>MANUAL DE ELECTRICIDAD BASICA PDF</b>';
+        function setTitulo() {
+                    document.getElementById("titulot").innerHTML = '<b>MANUAL DE ELECTRICIDAD BASICA PDF</b>';
+        } 
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1FX2JxEL5CQzrS13SPxeZbJuzCgofMZlA";
         }
