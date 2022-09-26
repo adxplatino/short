@@ -53,6 +53,14 @@ inlineScript.text  = '(adsbygoogle = window.adsbygoogle || []).push({});'
 document.getElementById('adsContenedor2').appendChild(inlineScript); 
 }
 
+function setTitulo(){
+        if (sessionStorage.getItem("setPagina") === "?como-tener-wifi-gratis") {
+        document.getElementById("titulot").innerHTML = '<b>VIDEO COMO TENER WIFI GRATIS</b>';
+        }else{
+        console.log("No hay titulo");
+        }
+}
+
 var keyword = [
 "?manual-excel-basico",
 "?manual-electricidad-basica",
@@ -126,6 +134,7 @@ function getTiempoCaptcha(e){
                             captcha();
                             setAdsUp();
                             setAdsDown();
+                            setTitulo();
                         }
                     }, delta);
                 }, 500);
