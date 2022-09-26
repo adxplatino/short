@@ -165,7 +165,7 @@ if (keyword.includes(extraida)) {
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
-        document.getElementById("titulo").innerHTML = '<b>MANUAL DE ELECTRICIDAD BASICA PDF</b>';
+        document.getElementById("titulot").innerHTML = '<b>MANUAL DE ELECTRICIDAD BASICA PDF</b>';
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1FX2JxEL5CQzrS13SPxeZbJuzCgofMZlA";
         }
