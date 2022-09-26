@@ -211,7 +211,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Drive") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DRAGON BALL SUPER HERO - GOOGLE DRIVE</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) GDRIVE</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
@@ -221,7 +221,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Media") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DRAGON BALL SUPER HERO - MEDIAFIRE</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) MEDIA</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
@@ -231,7 +231,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Mega") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DRAGON BALL SUPER HERO - MEGA</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) MEGA</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         setAdsDown();
