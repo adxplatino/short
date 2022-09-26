@@ -53,14 +53,6 @@ inlineScript.text  = '(adsbygoogle = window.adsbygoogle || []).push({});'
 document.getElementById('adsContenedor2').appendChild(inlineScript); 
 }
 
-fuction setTitulo(){
-        if (sessionStorage.getItem("setPagina") === "?como-tener-wifi-gratis") {
-        document.getElementById("titulot").innerHTML = '<b>MANUAL DE ELECTRICIDAD BASICA PDF</b>';
-        }else{
-        console.log("No hay titulo");
-        }
-}
-
 var keyword = [
 "?manual-excel-basico",
 "?manual-electricidad-basica",
@@ -111,7 +103,7 @@ function getTiempo(e){
                             clearInterval(tid); 
                             document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button onClick="getLink();" class="btn btn-primary" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
                             setAdsUp();
-                            setAdsDown();  
+                            setAdsDown();
                         }
                     }, delta);
                 }, 500);
@@ -168,7 +160,7 @@ if (keyword.includes(extraida)) {
         }
         
         }else if (sessionStorage.getItem("getPagina") === "?manual-electricidad-basica") {
-        sessionStorage.clear(setTimeout(1000));
+           sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE ELECTRICIDAD BASICA PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
