@@ -85,7 +85,8 @@ var randomUrl =
 "https://www.infoproyectos.com/p/right-time-buy-health-insurance.html",
 "https://www.infoproyectos.com/p/cost-health-insurance-family.html",
 "https://www.infoproyectos.com/p/factors-family-health-insurance.html",
-"https://www.infoproyectos.com/p/health-insurance-cover-death.html"
+"https://www.infoproyectos.com/p/health-insurance-cover-death.html",
+"https://www.infoproyectos.com/p/accident-insurance-coverage-buy.html"
 ]
 
 function getTiempo(e){
