@@ -111,27 +111,7 @@ function getTiempo(e){
                     }, delta);
                 }, 500);
 }
-function getTiempo2(e){
-    var timer = $('#timer');
-                window.setTimeout(function () {
-                    let time = 20000,
-                        delta = 1000,
-                        tid;
-                    tid = setInterval(function () {
-                        if (window.blurred) {
-                            return;
-                        }
-                        time -= delta;
-                        timer.text(time / 1000);
-                        if (time <= 0) {
-                            clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button onClick="getLink();" class="btn btn-primary" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
-                            setAdsUp();
-                            setAdsDown();
-                        }
-                    }, delta);
-                }, 500);
-}
+
 function getTiempoCaptcha(e){
     var timer = $('#timer');
                 window.setTimeout(function () {
@@ -246,7 +226,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Media") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) MEDIA</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
-        getTiempo2('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         document.getElementById("titulo").innerHTML = '<b>DBSSH (2022) MEDIA</b>';  
         setAdsUp();
         setAdsDown();
