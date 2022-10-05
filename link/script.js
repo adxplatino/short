@@ -65,7 +65,8 @@ var keyword = [
 "?the-beginners-guide-to-microsoft-excel",
 "?manual-reparacion-de-fuente-de-pc",
 "?manual-reparacion-de-celulares",
-"?manual-instalaciones-electricas-para-viviendas"
+"?manual-instalaciones-electricas-para-viviendas",
+"?manual-interpretacion-planos-electricos"
 ]
 
 var randomUrl = 
@@ -279,6 +280,16 @@ if (keyword.includes(extraida)) {
         setAdsDown();
         function getLink() {
                     location.href = "https://drive.google.com/file/d/14enwoMjZd27S5ggHymvLWqBpJRFg7fW-";
+        }
+          
+        }else if (sessionStorage.getItem("getPagina") === "?manual-interpretacion-planos-electricos") {
+            sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '<section class="content-container" style="height: auto;"><div class="card"><div class="card-body text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL INSTALACIONES ELECTRICAS PARA VIVIENDAS PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">10</span></b></button></br></br><center><div id="adsContenedor2"></div></center></div></div></section>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        setAdsDown();
+        function getLink() {
+                    location.href = "http://www.infoplc.net/files/documentacion/esquemas/infoPLC_TX-TEP-0001_MP_Interpretacion_de_planos_electricos_.pdf";
         }
           
         }else {
