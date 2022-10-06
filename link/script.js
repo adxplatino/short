@@ -282,3 +282,6 @@ if (keyword.includes(extraida)) {
         }    
 
 }
+if (!sessionStorage){
+document.getElementById('articuloImg').removeAttribute('src');
+}
