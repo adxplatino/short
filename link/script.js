@@ -278,10 +278,7 @@ if (keyword.includes(extraida)) {
         }
           
         }else {
-            console.log("No hay link");
+            console.log("N/link");
         }    
 
-}
-if (!sessionStorage){
-document.getElementById('articuloImg').removeAttribute('src');
 }
