@@ -152,6 +152,7 @@ if (keyword.includes(extraida)) {
     if (sessionStorage.getItem("setPagina")) {
         var getPagina = sessionStorage.getItem("setPagina");
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha botonLink" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         sessionStorage.clear(setTimeout(1000));
         getTiempoCaptcha('Click here to continue');
         setAdsUp();
@@ -163,6 +164,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?manual-electricidad-basica") {
            sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE ELECTRICIDAD BASICA PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -172,6 +174,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?manual-excel-basico") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL BASICO DE EXCEL MICROSOFT PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -181,6 +184,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?grupo-privado-whatsapp") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>GRUPO PRIVADO WHATSAPP</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -190,6 +194,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?como-tener-wifi-gratis") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>Potente ANTENA CASERA de largo alcance, fácil de hacer!</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -199,6 +204,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?manual-instalacion-sistema-fotovoltaico") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE INSTALACION DE SISTEMAS FOTOVOLTAICOS PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -208,6 +214,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Drive") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) GDRIVE</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -217,8 +224,8 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Media") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) MEDIA</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
-        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        document.getElementById("titulo").innerHTML = '<b>DBSSH (2022) MEDIA</b>';  
+        document.getElementById('articuloImg').removeAttribute('src');
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');  
         setAdsUp();
         function getLink() {
                     location.href = "https://www.mediafire.com/file/8srntxakradpy4c/DBSSHLAT.mp4/file";
@@ -227,6 +234,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?DBSSHLATHD-Mega") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) MEGA</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></br></br><center></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -236,6 +244,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?the-beginners-guide-to-microsoft-excel") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>The Beginners Guide to Microsoft Excel PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -245,6 +254,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?manual-reparacion-de-fuente-de-pc") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE REPARACION DE FUENTES DE PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -254,6 +264,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?manual-reparacion-de-celulares") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE REPARACION DE CELULARES PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
@@ -264,6 +275,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL INSTALACIONES ELECTRICAS PARA VIVIENDAS PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        document.getElementById('articuloImg').removeAttribute('src');
         setAdsUp();
         function getLink() {
                     location.href = "https://drive.google.com/file/d/14enwoMjZd27S5ggHymvLWqBpJRFg7fW-";
@@ -272,6 +284,7 @@ if (keyword.includes(extraida)) {
         }else if (sessionStorage.getItem("getPagina") === "?manual-interpretacion-planos-electricos") {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL INTERPRETACION DE PLANOS ELECTRICOS PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById('articuloImg').removeAttribute('src');
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         setAdsUp();
         function getLink() {
