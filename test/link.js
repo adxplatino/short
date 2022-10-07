@@ -59,7 +59,8 @@ if (keyword.includes(extraida)) {
            sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE ELECTRICIDAD BASICA PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">5</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-document.getElementById("articuloImg").removeAttribute("src");
+document.getElementById("articuloImg").innerHTML = 'MANUAL DE ELECTRICIDAD BASICA PDF';
+document.getElementById("titulo").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1FX2JxEL5CQzrS13SPxeZbJuzCgofMZlA";
         }
