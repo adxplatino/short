@@ -46,14 +46,14 @@ if (keyword.includes(extraida)) {
 
     if (sessionStorage.getItem("setPagina")) {
         var getPagina = sessionStorage.getItem("setPagina");
-        //document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha botonLink" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">5</span></b></button></div>';
-        //sessionStorage.clear(setTimeout(1000));
-        //getTiempo('Click here to continue');
+        document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha botonLink" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">5</span></b></button></div>';
+        sessionStorage.clear(setTimeout(1000));
+        getTiempo('Click here to continue');
         document.getElementById('articuloImg').removeAttribute('src');
-        //function getLink() {
-                    //location.reload();
-                    //sessionStorage.setItem("getPagina", getPagina);
-        //}
+        function getLink() {
+                    location.reload();
+                    sessionStorage.setItem("getPagina", getPagina);
+        }
         
         }else if (sessionStorage.getItem("getPagina") === "?manual-electricidad-basica") {
            sessionStorage.clear(setTimeout(1000));
