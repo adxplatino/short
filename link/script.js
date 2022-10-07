@@ -155,6 +155,7 @@ if (keyword.includes(extraida)) {
         sessionStorage.clear(setTimeout(1000));
         getTiempoCaptcha('Click here to continue');
         setAdsUp();
+      document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.reload();
                     sessionStorage.setItem("getPagina", getPagina);
