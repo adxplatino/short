@@ -140,11 +140,13 @@ var extraida = setPagina.substring(0, indice);
 if (keyword.includes(extraida)) {
     sessionStorage.setItem("setPagina", extraida);
     var i = parseInt(Math.random() * randomUrl.length);
+  document.getElementById("articuloImg").removeAttribute("src");
     location.href = randomUrl[i];
 
 } else if(keyword.includes(setPagina)) {
     sessionStorage.setItem("setPagina", setPagina);
     var i = parseInt(Math.random() * randomUrl.length);
+  document.getElementById("articuloImg").removeAttribute("src");
     location.href = randomUrl[i];
   
 }else{
