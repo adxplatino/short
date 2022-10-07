@@ -11,7 +11,7 @@ var randomUrl =
 function getTiempo(e){
     var timer = $('#timer');
                 window.setTimeout(function () {
-                    let time = 20000,
+                    let time = 5000,
                         delta = 1000,
                         tid;
                     tid = setInterval(function () {
