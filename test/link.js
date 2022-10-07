@@ -49,7 +49,7 @@ if (keyword.includes(extraida)) {
         //document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha botonLink" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">5</span></b></button></div>';
         //sessionStorage.clear(setTimeout(1000));
         //getTiempo('Click here to continue');
-document.getElementById("articuloImg").removeAttribute("src");
+        document.getElementsByTagName("img")[0].removeAttribute("src");
         //function getLink() {
                     //location.reload();
                     //sessionStorage.setItem("getPagina", getPagina);
