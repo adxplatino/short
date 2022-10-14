@@ -89,7 +89,7 @@ function getTiempoCaptcha(e){
                         if (time <= 0) {
                             clearInterval(tid); 
                             document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Please solve the captcha below to proceed to the destination page.</b></p><center><div id="adsContenedor"></div></center><div class="g-recaptcha m-2" data-callback="CaptchaCheckedAds" data-sitekey="6LeYowYaAAAAAB97jxMiic4E6kwBWjD3_Zvxdmin" style="display: inline-block;"></div></br><h2 text-center id="titulo"></h2><button onClick="getLink();" btn-captcha="" class="btn btn-primary" disabled="disabled" id="Linkcaptcha" m-2="" style="width: 300px;"><b>'+e+'</b></button></div></div><div id="captchascriptAds">';
-                            captcha();
+                            captchaAds();
                             setAdsUp();
                         }
                     }, delta);
