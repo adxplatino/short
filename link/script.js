@@ -1,3 +1,59 @@
+var keyword = [
+"?manual-excel-basico",
+"?manual-electricidad-basica",
+"?grupo-privado-whatsapp",
+"?como-tener-wifi-gratis",
+"?manual-instalacion-sistema-fotovoltaico",
+"?DBSSHLATHD-Drive",
+"?DBSSHLATHD-Media",
+"?DBSSHLATHD-Mega",
+"?the-beginners-guide-to-microsoft-excel",
+"?manual-reparacion-de-fuente-de-pc",
+"?manual-reparacion-de-celulares",
+"?manual-instalaciones-electricas-para-viviendas",
+"?manual-interpretacion-planos-electricos"
+]
+
+var randomUrl = 
+["https://www.infoproyectos.com/p/types-of-insurance.html",
+"https://www.infoproyectos.com/p/the-importance-of-insurance.html",
+"https://www.infoproyectos.com/p/definition-of-insurance.html",
+"https://www.infoproyectos.com/p/fire-insurance-types.html",
+"https://www.infoproyectos.com/p/divisions-of-fire-insurance.html",
+"https://www.infoproyectos.com/p/the-concept-of-life-insurance.html",
+"https://www.infoproyectos.com/p/types-of-life-insurance-policies.html",
+"https://www.infoproyectos.com/p/insurance-companies.html",
+"https://www.infoproyectos.com/p/insurance-principles-legal-principles.html",
+"https://www.infoproyectos.com/p/technical-principles-insurance.html",
+"https://www.infoproyectos.com/p/tips-choosing-right-insurance-company.html",
+"https://www.infoproyectos.com/p/health-insurance-important-than-you.html",
+"https://www.infoproyectos.com/p/right-age-purchase-health-insurance.html",
+"https://www.infoproyectos.com/p/right-time-buy-health-insurance.html",
+"https://www.infoproyectos.com/p/cost-health-insurance-family.html",
+"https://www.infoproyectos.com/p/factors-family-health-insurance.html",
+"https://www.infoproyectos.com/p/health-insurance-cover-death.html",
+"https://www.infoproyectos.com/p/accident-insurance-coverage-buy.html"
+]
+
+var setPagina = window.location.search;
+var indice = setPagina.indexOf("&m=1");
+var extraida = setPagina.substring(0, indice);
+
+if (keyword.includes(extraida)) {
+    sessionStorage.setItem("setPagina", extraida);
+    var i = parseInt(Math.random() * randomUrl.length);
+  document.getElementById("articuloImg").removeAttribute("src");
+    location.href = randomUrl[i];
+
+} else if(keyword.includes(setPagina)) {
+    sessionStorage.setItem("setPagina", setPagina);
+    var i = parseInt(Math.random() * randomUrl.length);
+  document.getElementById("articuloImg").removeAttribute("src");
+    location.href = randomUrl[i];
+  
+}else{
+  
+  
 function captcha(){
 var externalScript   = document.createElement("script");
 externalScript.type  = "text/javascript";
@@ -52,44 +108,7 @@ inlineScript.type  = "text/javascript";
 inlineScript.text  = '(adsbygoogle = window.adsbygoogle || []).push({});'  
 document.getElementById('adsContenedor2').appendChild(inlineScript); 
 }
-
-var keyword = [
-"?manual-excel-basico",
-"?manual-electricidad-basica",
-"?grupo-privado-whatsapp",
-"?como-tener-wifi-gratis",
-"?manual-instalacion-sistema-fotovoltaico",
-"?DBSSHLATHD-Drive",
-"?DBSSHLATHD-Media",
-"?DBSSHLATHD-Mega",
-"?the-beginners-guide-to-microsoft-excel",
-"?manual-reparacion-de-fuente-de-pc",
-"?manual-reparacion-de-celulares",
-"?manual-instalaciones-electricas-para-viviendas",
-"?manual-interpretacion-planos-electricos"
-]
-
-var randomUrl = 
-["https://www.infoproyectos.com/p/types-of-insurance.html",
-"https://www.infoproyectos.com/p/the-importance-of-insurance.html",
-"https://www.infoproyectos.com/p/definition-of-insurance.html",
-"https://www.infoproyectos.com/p/fire-insurance-types.html",
-"https://www.infoproyectos.com/p/divisions-of-fire-insurance.html",
-"https://www.infoproyectos.com/p/the-concept-of-life-insurance.html",
-"https://www.infoproyectos.com/p/types-of-life-insurance-policies.html",
-"https://www.infoproyectos.com/p/insurance-companies.html",
-"https://www.infoproyectos.com/p/insurance-principles-legal-principles.html",
-"https://www.infoproyectos.com/p/technical-principles-insurance.html",
-"https://www.infoproyectos.com/p/tips-choosing-right-insurance-company.html",
-"https://www.infoproyectos.com/p/health-insurance-important-than-you.html",
-"https://www.infoproyectos.com/p/right-age-purchase-health-insurance.html",
-"https://www.infoproyectos.com/p/right-time-buy-health-insurance.html",
-"https://www.infoproyectos.com/p/cost-health-insurance-family.html",
-"https://www.infoproyectos.com/p/factors-family-health-insurance.html",
-"https://www.infoproyectos.com/p/health-insurance-cover-death.html",
-"https://www.infoproyectos.com/p/accident-insurance-coverage-buy.html"
-]
-
+  
 function getTiempo(e){
     var timer = $('#timer');
                 window.setTimeout(function () {
@@ -110,7 +129,7 @@ function getTiempo(e){
                     }, delta);
                 }, 500);
 }
-
+  
 function getTiempoCaptcha(e){
     var timer = $('#timer');
                 window.setTimeout(function () {
@@ -132,25 +151,7 @@ function getTiempoCaptcha(e){
                     }, delta);
                 }, 500);
 }
-
-var setPagina = window.location.search;
-var indice = setPagina.indexOf("&m=1");
-var extraida = setPagina.substring(0, indice);
-
-if (keyword.includes(extraida)) {
-    sessionStorage.setItem("setPagina", extraida);
-    var i = parseInt(Math.random() * randomUrl.length);
-  document.getElementById("articuloImg").removeAttribute("src");
-    location.href = randomUrl[i];
-
-} else if(keyword.includes(setPagina)) {
-    sessionStorage.setItem("setPagina", setPagina);
-    var i = parseInt(Math.random() * randomUrl.length);
-  document.getElementById("articuloImg").removeAttribute("src");
-    location.href = randomUrl[i];
   
-}else{
-
     if (sessionStorage.getItem("setPagina")) {
         var getPagina = sessionStorage.getItem("setPagina");
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha botonLink" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
