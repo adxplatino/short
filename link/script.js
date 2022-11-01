@@ -13,46 +13,6 @@ function CaptchaCheckedAds() {
 jQuery('#Linkcaptcha').removeClass('disabled').removeAttr('disabled');
 }
 
-function setAdsUp(){
-var externalScript   = document.createElement("script");
-externalScript.type  = "text/javascript";
-externalScript.setAttribute('async',"");
-externalScript.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-document.getElementById('adsContenedor').appendChild(externalScript);
-var comment = document.createComment(" infoproyectos_300x250 ");
-document.getElementById('adsContenedor').appendChild(comment);
-var ins   = document.createElement("ins");
-ins.setAttribute('class','adsbygoogle');
-ins.setAttribute('data-ad-client','ca-pub-6278983531888232');
-ins.setAttribute('data-ad-slot','9029296375');
-ins.setAttribute('style','display:inline-block;width:300px;height:250px');
-document.getElementById('adsContenedor').appendChild(ins);
-var inlineScript   = document.createElement("script");
-inlineScript.type  = "text/javascript";
-inlineScript.text  = '(adsbygoogle = window.adsbygoogle || []).push({});'  
-document.getElementById('adsContenedor').appendChild(inlineScript); 
-}
-
-function setAdsDown(){
-var externalScript   = document.createElement("script");
-externalScript.type  = "text/javascript";
-externalScript.setAttribute('async',"");
-externalScript.src = "//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
-document.getElementById('adsContenedor2').appendChild(externalScript);
-var comment = document.createComment(" infoproyectos_300x250 ");
-document.getElementById('adsContenedor2').appendChild(comment);
-var ins   = document.createElement("ins");
-ins.setAttribute('class','adsbygoogle');
-ins.setAttribute('data-ad-client','ca-pub-6278983531888232');
-ins.setAttribute('data-ad-slot','9029296375');
-ins.setAttribute('style','display:inline-block;width:300px;height:250px');
-document.getElementById('adsContenedor2').appendChild(ins);
-var inlineScript   = document.createElement("script");
-inlineScript.type  = "text/javascript";
-inlineScript.text  = '(adsbygoogle = window.adsbygoogle || []).push({});'  
-document.getElementById('adsContenedor2').appendChild(inlineScript); 
-}
-  
 function getTiempo(e){
     var timer = $('#timer');
                 window.setTimeout(function () {
@@ -67,8 +27,7 @@ function getTiempo(e){
                         timer.text(time / 1000);
                         if (time <= 0) {
                             clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button onClick="getLink();" class="btn btn-primary" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br></div>';
-                            setAdsUp();
+                            document.getElementById("LINK").innerHTML = '</br><div class="text-center"><button onClick="getLink();" class="btn btn-primary" m-2="" style="width: 300px;"><b>'+e+'</b></button></br></br></div>';
                         }
                     }, delta);
                 }, 500);
@@ -88,9 +47,8 @@ function getTiempoCaptcha(e){
                         timer.text(time / 1000);
                         if (time <= 0) {
                             clearInterval(tid); 
-                            document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Please solve the captcha below to proceed to the destination page.</b></p><center><div id="adsContenedor"></div></center><div class="g-recaptcha m-2" data-callback="CaptchaCheckedAds" data-sitekey="6LeYowYaAAAAAB97jxMiic4E6kwBWjD3_Zvxdmin" style="display: inline-block;"></div></br><h2 text-center id="titulo"></h2><button onClick="getLink();" btn-captcha="" class="btn btn-primary" disabled="disabled" id="Linkcaptcha" m-2="" style="width: 300px;"><b>'+e+'</b></button></div></div><div id="captchascriptAds">';
+                            document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Please solve the captcha below to proceed to the destination page.</b></p><div class="g-recaptcha m-2" data-callback="CaptchaCheckedAds" data-sitekey="6LeYowYaAAAAAB97jxMiic4E6kwBWjD3_Zvxdmin" style="display: inline-block;"></div></br><button onClick="getLink();" btn-captcha="" class="btn btn-primary" disabled="disabled" id="Linkcaptcha" m-2="" style="width: 300px;"><b>'+e+'</b></button></div></div><div id="captchascriptAds">';
                             captchaAds();
-                            setAdsUp();
                         }
                     }, delta);
                 }, 500);
@@ -154,11 +112,10 @@ if (keyword.includes(extraida)) {
   
     if (sessionStorage.getItem("setPagina")) {
         var getPagina = sessionStorage.getItem("setPagina");
-        document.getElementById("articuloImg").innerHTML = '</br><div class="text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha botonLink" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha botonLink" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         sessionStorage.clear(setTimeout(1000));
         getTiempoCaptcha('Click here to continue');
-        //setAdsUp();
-      //document.getElementById("articuloImg").removeAttribute("src");
+      document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.reload();
                     sessionStorage.setItem("getPagina", getPagina);
@@ -168,7 +125,6 @@ if (keyword.includes(extraida)) {
            sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE ELECTRICIDAD BASICA PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
       document.getElementById("articuloImg").removeAttribute("src");    
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1FX2JxEL5CQzrS13SPxeZbJuzCgofMZlA";
@@ -178,7 +134,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL BASICO DE EXCEL MICROSOFT PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1RY8SzQovsIOY4yzxi2q6n6ttAB93oneR";
         }
@@ -187,7 +143,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>GRUPO PRIVADO WHATSAPP</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://www.infoproyectos.com/p/result.html?q=grupos%20whatsapp%20amistad#gsc.tab=0&gsc.q=grupos%20whatsapp%20amistad&gsc.page=1";
         }
@@ -196,7 +152,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>Potente ANTENA CASERA de largo alcance, fácil de hacer!</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j";
         }
@@ -205,7 +161,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE INSTALACION DE SISTEMAS FOTOVOLTAICOS PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1FvgxW-_S2cSvTW4x1NQOvr-ZoPMwxcPL";
         }
@@ -214,7 +170,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) GDRIVE</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1SJwUDgJFGaHU4nrMjMZYZz3bEAa9EBQn";
         }
@@ -223,7 +179,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) MEDIA</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');  
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://www.mediafire.com/file/8srntxakradpy4c/DBSSHLAT.mp4/file";
         }
@@ -232,7 +188,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>DBSSH (2022) MEGA</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></br></br><center></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://mega.nz/file/C7ITVCgI#4tM9xqqsgglmln7h4qVLG1W4IzD4fMUlDjVW2Lf-HcI";
         }
@@ -241,7 +197,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>The Beginners Guide to Microsoft Excel PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1P-kIJNdT9HNSy-_e3b9Tpd1F8IzEaPcW";
         }
@@ -250,7 +206,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE REPARACION DE FUENTES DE PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/13J0rlpho46qnrYl1xUTts68189t1ULg-";
         }
@@ -259,7 +215,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL DE REPARACION DE CELULARES PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/101xVzDec6JMbzJ7Kqa3isk3RXf7N-TSt";
         }
@@ -268,7 +224,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL INSTALACIONES ELECTRICAS PARA VIVIENDAS PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/14enwoMjZd27S5ggHymvLWqBpJRFg7fW-";
         }
@@ -277,7 +233,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL INTERPRETACION DE PLANOS ELECTRICOS PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1vogfzFa1ajmUksQdxxRmxiI0Hfjr_olH";
         }
@@ -286,7 +242,7 @@ if (keyword.includes(extraida)) {
             sessionStorage.clear(setTimeout(1000));
         document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL MANEJO DEL MULTIMETRO PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
-        setAdsUp();
+        document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1onE_iJrEZnvxkldMffFHGArUGu5QtYR1";
         }
