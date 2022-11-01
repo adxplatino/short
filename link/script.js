@@ -154,11 +154,11 @@ if (keyword.includes(extraida)) {
   
     if (sessionStorage.getItem("setPagina")) {
         var getPagina = sessionStorage.getItem("setPagina");
-        document.getElementById("LINK").innerHTML = '</br><div class="text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha botonLink" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById("articuloImg").innerHTML = '</br><div class="text-center"><p><b>Wait a moment please...</b></p><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"></h2><button btn-captcha="" class="btn btn-primary" id="enlacecaptcha botonLink" m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         sessionStorage.clear(setTimeout(1000));
         getTiempoCaptcha('Click here to continue');
-        setAdsUp();
-      document.getElementById("articuloImg").removeAttribute("src");
+        //setAdsUp();
+      //document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
                     location.reload();
                     sessionStorage.setItem("getPagina", getPagina);
