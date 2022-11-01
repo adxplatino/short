@@ -109,7 +109,8 @@ var keyword = [
 "?manual-reparacion-de-fuente-de-pc",
 "?manual-reparacion-de-celulares",
 "?manual-instalaciones-electricas-para-viviendas",
-"?manual-interpretacion-planos-electricos"
+"?manual-interpretacion-planos-electricos",
+"?manual-manejo-multimetro"
 ]
 
 var randomUrl = 
@@ -279,6 +280,15 @@ if (keyword.includes(extraida)) {
         setAdsUp();
         function getLink() {
                     location.href = "https://drive.google.com/file/d/1vogfzFa1ajmUksQdxxRmxiI0Hfjr_olH";
+        }
+          
+        }else if (sessionStorage.getItem("getPagina") === "?manual-manejo-multimetro") {
+            sessionStorage.clear(setTimeout(1000));
+        document.getElementById("LINK").innerHTML = '</br><div class="text-center"><center><div id="adsContenedor"></div></center><h2 text-center id="titulo"><b>MANUAL MANEJO DEL MULTIMETRO PDF</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
+        setAdsUp();
+        function getLink() {
+                    location.href = "https://drive.google.com/file/d/1onE_iJrEZnvxkldMffFHGArUGu5QtYR1";
         }
           
         }else {
