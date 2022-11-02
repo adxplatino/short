@@ -254,7 +254,7 @@ if (keyword.includes(extraida)) {
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
-                    location.href = "https://mega.nz/folder/ihdikRiB#BxBc_6l7jdNAuuNkFya20g";
+                    location.href = "https://mega.nz/folder/AvAgBSZZ#8J0P1ERd30G41zsy0wcN4A/folder/dng0USyI";
         }
           
         }else {
