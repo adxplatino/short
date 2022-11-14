@@ -234,7 +234,7 @@ if (keyword.includes(extraida)) {
           
         }else if (sessionStorage.getItem("getPagina") === "?contenido-exclusivo") {
             sessionStorage.clear(setTimeout(1000));
-        document.getElementById("LINK").innerHTML = '<div class="text-center"><h2 text-center id="titulo"><b>CONTENIDO EXCLUSIVO <img height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/1f51e.png"> 100% FREE</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
+        document.getElementById("LINK").innerHTML = '<div class="text-center"><h2 text-center id="titulo"><b>CONTENIDO EXCLUSIVO 100% FREE</b></h2><button class="btn btn-primary"  m-2="" style="width: 300px;" disabled="disabled"><b>Please wait ... <span id="timer">20</span></b></button></div>';
         getTiempo('<i class="fa-solid fa-up-right-from-square"></i> GET LINK');
         document.getElementById("articuloImg").removeAttribute("src");
         function getLink() {
