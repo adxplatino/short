@@ -73,25 +73,8 @@ var keyword = [
 ]
 
 var randomUrl = 
-["https://www.infoproyectos.com/p/types-of-insurance.html",
-"https://www.infoproyectos.com/p/the-importance-of-insurance.html",
-"https://www.infoproyectos.com/p/definition-of-insurance.html",
-"https://www.infoproyectos.com/p/fire-insurance-types.html",
-"https://www.infoproyectos.com/p/divisions-of-fire-insurance.html",
-"https://www.infoproyectos.com/p/the-concept-of-life-insurance.html",
-"https://www.infoproyectos.com/p/types-of-life-insurance-policies.html",
-"https://www.infoproyectos.com/p/insurance-companies.html",
-"https://www.infoproyectos.com/p/insurance-principles-legal-principles.html",
-"https://www.infoproyectos.com/p/technical-principles-insurance.html",
-"https://www.infoproyectos.com/p/tips-choosing-right-insurance-company.html",
-"https://www.infoproyectos.com/p/health-insurance-important-than-you.html",
-"https://www.infoproyectos.com/p/right-age-purchase-health-insurance.html",
-"https://www.infoproyectos.com/p/right-time-buy-health-insurance.html",
-"https://www.infoproyectos.com/p/cost-health-insurance-family.html",
-"https://www.infoproyectos.com/p/factors-family-health-insurance.html",
-"https://www.infoproyectos.com/p/health-insurance-cover-death.html",
-"https://www.infoproyectos.com/p/accident-insurance-coverage-buy.html",
-"https://www.infoproyectos.com/p/15-libros-de-trading-gratis-pdf.html"
+["https://www.infoproyectos.com/p/get-download.html",
+"https://www.infoproyectos.com/p/get-download.html"
 ]
 
 var setPagina = window.location.search;
