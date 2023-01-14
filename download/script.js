@@ -44,7 +44,8 @@ if (keyword.includes(extraida)) {
         document.getElementById("downloads").innerHTML = "12654";
         document.getElementById("downsize").innerHTML = "(65 MB)";
         document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
-   
+        sessionStorage.clear(setTimeout(1000));
+             
         }else if(sessionStorage.getItem("setPagina") === "?manual-de-electronica-basica-en-pdf") {
         document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de electrónica básica Totalmente Gratis";
         document.getElementById("downtitle").innerHTML = "Manual de electrónica básica";
@@ -52,6 +53,8 @@ if (keyword.includes(extraida)) {
         document.getElementById("downloads").innerHTML = "4656";
         document.getElementById("downsize").innerHTML = "(28 MB)";
         document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
+        sessionStorage.clear(setTimeout(1000));
+                    
         }else{
          console.log("N/link");
         }
