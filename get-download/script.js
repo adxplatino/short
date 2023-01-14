@@ -1,5 +1,5 @@
 var keyword = [
-"?coleccion-de-circuitos-de-electronica",
+"?manual-electricidad-viviendas",
 "?manual-de-electronica-basica-en-pdf",
 "?manual-de-circuitos-electricos-en-pdf",
 "?como-construir-tu-propio-ordenador",
@@ -25,13 +25,14 @@ if (keyword.includes(extraida)) {
   location.href = randomUrl[i];
 } else {
 
-  if (sessionStorage.getItem("setPagina") === "?coleccion-de-circuitos-de-electronica") {
-    document.getElementById("donwload-title").innerHTML = "Descarga Aqui La Colección de circuitos de electrónica Totalmente Gratis";
-    document.getElementById("downtitle").innerHTML = "Colección de circuitos de electrónica";
+  if (sessionStorage.getItem("setPagina") === "?manual-electricidad-viviendas") {
+    document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Electricidad Básica Para Viviendas Totalmente Gratis";
+    document.getElementById("downtitle").innerHTML = "Manual de Electricidad Básica Para Viviendas";
+    document.getElementById("downdesc").innerHTML = "Aprende a hacer una instalación eléctrica para viviendas paso a paso y de forma sencilla con este manual conocerás todos los elementos de una vivienda y su instalación explicados de formas clara y sencilla."; 
     document.getElementById("downtype").innerHTML = "PDF";
     document.getElementById("downloads").innerHTML = "8295";
-    document.getElementById("downsize").innerHTML = "(20 MB)";
-    document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
+    document.getElementById("downsize").innerHTML = "(5 MB)";
+    document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/14enwoMjZd27S5ggHymvLWqBpJRFg7fW-");
     function getLink() {
       sessionStorage.clear(setTimeout(1000));
       document.getElementById("contador").style.display = "inline";
@@ -50,9 +51,10 @@ if (keyword.includes(extraida)) {
       }
     }
     
-    } else if (sessionStorage.getItem("setPagina") === "?manual-de-electronica-basica-en-pdf") {
+    } else if (sessionStorage.getItem("setPagina") === "2") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de electrónica básica Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de electrónica básica";
+      document.getElementById("downdesc").innerHTML = "descripcion"; 
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "5600";
       document.getElementById("downsize").innerHTML = "(12 MB)";
@@ -75,9 +77,10 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-      } else if (sessionStorage.getItem("setPagina") === "?manual-de-circuitos-electricos-en-pdf") {
+      } else if (sessionStorage.getItem("setPagina") === "3") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Circuitos Eléctricos Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de Circuitos Eléctricos";
+      document.getElementById("downdesc").innerHTML = "descripcion";   
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "3123";
       document.getElementById("downsize").innerHTML = "(14 MB)";
@@ -100,9 +103,10 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-      } else if (sessionStorage.getItem("setPagina") === "?como-construir-tu-propio-ordenador") {
+      } else if (sessionStorage.getItem("setPagina") === "4") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Cómo construir tu propio ordenador desde cero: una guía para principiantes Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Cómo construir tu propio ordenador desde cero: una guía para principiantes";
+      document.getElementById("downdesc").innerHTML = "descripcion";   
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "9715";
       document.getElementById("downsize").innerHTML = "(6 MB)";
@@ -125,9 +129,10 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-       } else if (sessionStorage.getItem("setPagina") === "?manual-definitivo-de-soldadura") {
+       } else if (sessionStorage.getItem("setPagina") === "5") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual Definitivo de Soldadura Electrónica Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual Definitivo de Soldadura Electrónica";
+      document.getElementById("downdesc").innerHTML = "descripcion";    
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "1142 ";
       document.getElementById("downsize").innerHTML = "(47 MB)";
@@ -150,9 +155,10 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-       } else if (sessionStorage.getItem("setPagina") === "?manual-de-reparacion-de-lavadoras-en-pdf") {
+       } else if (sessionStorage.getItem("setPagina") === "6") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de reparación de lavadoras Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de reparación de lavadoras";
+      document.getElementById("downdesc").innerHTML = "descripcion";   
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "6978";
       document.getElementById("downsize").innerHTML = "(98 MB)";
