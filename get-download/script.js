@@ -1,11 +1,11 @@
 var keyword = [
 "?manual-electricidad-viviendas",
-"?manual-de-electronica-basica-en-pdf",
-"?manual-de-circuitos-electricos-en-pdf",
-"?como-construir-tu-propio-ordenador",
-"?manual-definitivo-de-soldadura",
-"?manual-de-reparacion-de-lavadoras-en-pdf",
-"?manual-reparacion-refrigeradores"
+"?contenido-vip",
+"?",
+"?c",
+"?",
+"?",
+"?"
 ]
 var randomUrl = ["/p/get-download.html",
   "/p/get-download.html"
@@ -51,14 +51,14 @@ if (keyword.includes(extraida)) {
       }
     }
     
-    } else if (sessionStorage.getItem("setPagina") === "2") {
-      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de electrónica básica Totalmente Gratis";
-      document.getElementById("downtitle").innerHTML = "Manual de electrónica básica";
-      document.getElementById("downdesc").innerHTML = "descripcion"; 
-      document.getElementById("downtype").innerHTML = "PDF";
+    } else if (sessionStorage.getItem("setPagina") === "?contenido-vip") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Contenido Exclusivo Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Contenido Exclusivo";
+      document.getElementById("downdesc").innerHTML = "¡No te pierdas esta oportunidad de disfrutar de nuestro contenido de alta calidad que NO encontrarás en ningún otro lugar! ¡Accede ahora y comienza a disfrutar de todo lo que tenemos para ti."; 
+      document.getElementById("downtype").innerHTML = "Galery";
       document.getElementById("downloads").innerHTML = "5600";
-      document.getElementById("downsize").innerHTML = "(12 MB)";
-      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
+      document.getElementById("downsize").innerHTML = "(132 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://t.co/AYXYygxOfy");
 
       function getLink() {
         sessionStorage.clear(setTimeout(1000));
