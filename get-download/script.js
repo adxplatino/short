@@ -263,7 +263,8 @@ if (keyword.includes(extraida)) {
             document.getElementById("linkDownload").style.display = "inline";
           }
         }
-      } else if (sessionStorage.getItem("setPagina") === "?manual-sobre-manejo-multimetro") {
+      } 
+        }else if (sessionStorage.getItem("setPagina") === "?manual-sobre-manejo-multimetro") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual Sobre El Manejo Del Multímetro Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual Sobre El Manejo Del Multímetro";
       document.getElementById("downdesc").innerHTML = "Aprende el uso y el manejo del multímetro con este manual gratuito donde conocerás todas las funciones de esta herramienta.";
