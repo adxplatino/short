@@ -3,7 +3,7 @@ var keyword = [
 "?contenido-vip",
 "?tecnico-electricista",
 "?manual-reparacion-refrigeradores",
-"?",
+"?antena-wifi-largo-alcance",
 "?",
 "?"
 ]
@@ -103,13 +103,13 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-      } else if (sessionStorage.getItem("setPagina") === "4") {
-      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Cómo construir tu propio ordenador desde cero: una guía para principiantes Totalmente Gratis";
-      document.getElementById("downtitle").innerHTML = "Cómo construir tu propio ordenador desde cero: una guía para principiantes";
-      document.getElementById("downdesc").innerHTML = "descripcion";   
-      document.getElementById("downtype").innerHTML = "PDF";
+      } else if (sessionStorage.getItem("setPagina") === "?antena-wifi-largo-alcance") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Cómo construir una ANTENA WIFI CASERA de largo alcance Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Potente ANTENA WIFI CASERA de largo alcance, fácil de hacer!";
+      document.getElementById("downdesc").innerHTML = "Aprende a cómo hacer una antena WiFi de largo alcance para mejorar la señal de wifi. Con este tutorial en video de alta calidad, podrás seguir paso a paso las instrucciones y tener una antena funcionando en poco tiempo.";   
+      document.getElementById("downtype").innerHTML = "MP4";
       document.getElementById("downloads").innerHTML = "9715";
-      document.getElementById("downsize").innerHTML = "(6 MB)";
+      document.getElementById("downsize").innerHTML = "(76 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
 
       function getLink() {
