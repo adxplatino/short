@@ -9,7 +9,7 @@ var keyword = [
 "?manual-elecrticidad-basica",
 "?manual-word-excel-power-point-avanzado",
 "?manual-sobre-manejo-multimetro",
-"?",
+"?200-proyectos-carpinteria-libro",
 "?"
 ]
 var randomUrl = ["/p/get-download.html",
@@ -264,7 +264,7 @@ if (keyword.includes(extraida)) {
           }
         }
       } 
-        }else if (sessionStorage.getItem("setPagina") === "?manual-sobre-manejo-multimetro") {
+        } else if (sessionStorage.getItem("setPagina") === "?manual-sobre-manejo-multimetro") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual Sobre El Manejo Del Multímetro Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual Sobre El Manejo Del Multímetro";
       document.getElementById("downdesc").innerHTML = "Aprende el uso y el manejo del multímetro con este manual gratuito donde conocerás todas las funciones de esta herramienta.";
@@ -272,6 +272,32 @@ if (keyword.includes(extraida)) {
       document.getElementById("downloads").innerHTML = "7986";
       document.getElementById("downsize").innerHTML = "(828 KB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1onE_iJrEZnvxkldMffFHGArUGu5QtYR1");
+
+      function getLink() {
+        sessionStorage.clear(setTimeout(1000));
+        document.getElementById("contador").style.display = "inline";
+        document.getElementById("downboton").style.display = "none";
+        let time_out = 1000;
+        let counter_id;
+        let seconds = 15;
+        counter_id = setInterval(update_counter_link, time_out);
+        function update_counter_link() {
+          document.getElementById('link_button').innerHTML = (--seconds);
+          if (!seconds) {
+            clearInterval(counter_id);
+            document.getElementById("contador").style.display = "none";
+            document.getElementById("linkDownload").style.display = "inline";
+          }
+        }
+      } 
+        } else if (sessionStorage.getItem("setPagina") === "?200-proyectos-carpinteria-libro") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui Los 200 Planos de Carpintería Gratis Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "200 Planos de Carpintería Gratis";
+      document.getElementById("downdesc").innerHTML = "Aprende a fabricar muebles de madera con estos 200 planos de carpintería totalmente gratuitos.";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "7566";
+      document.getElementById("downsize").innerHTML = "(44 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1nIqExY9VXxB8_oE_T5Zad6_Xb40wlOJo");
 
       function getLink() {
         sessionStorage.clear(setTimeout(1000));
