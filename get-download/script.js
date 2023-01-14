@@ -2,7 +2,7 @@ var keyword = [
 "?manual-electricidad-viviendas",
 "?contenido-vip",
 "?tecnico-electricista",
-"?c",
+"?manual-reparacion-refrigeradores",
 "?",
 "?",
 "?"
