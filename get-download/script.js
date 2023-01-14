@@ -6,7 +6,7 @@ var keyword = [
 "?antena-wifi-largo-alcance",
 "?manual-reparacion-de-celulares",
 "?manual-basico-excel",
-"?",
+"?manual-elecrticidad-basica",
 "?",
 "?",
 "?",
@@ -212,7 +212,33 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-      } else {
+       } else if (sessionStorage.getItem("setPagina") === "?manual-elecrticidad-basica") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual De Electricidad Básica Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Manual De Electricidad Básica";
+      document.getElementById("downdesc").innerHTML = "Aprende electricidad básica con este manual gratuito y conoce todos los aspectos de esta bonita profesión.";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "7430";
+      document.getElementById("downsize").innerHTML = "(5 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1FX2JxEL5CQzrS13SPxeZbJuzCgofMZlA");
+
+      function getLink() {
+        sessionStorage.clear(setTimeout(1000));
+        document.getElementById("contador").style.display = "inline";
+        document.getElementById("downboton").style.display = "none";
+        let time_out = 1000;
+        let counter_id;
+        let seconds = 15;
+        counter_id = setInterval(update_counter_link, time_out);
+        function update_counter_link() {
+          document.getElementById('link_button').innerHTML = (--seconds);
+          if (!seconds) {
+            clearInterval(counter_id);
+            document.getElementById("contador").style.display = "none";
+            document.getElementById("linkDownload").style.display = "inline";
+          }
+        }
+      }  
+       } else {
         console.log("N/link");
       }
 
