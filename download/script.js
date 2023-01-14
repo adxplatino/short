@@ -32,7 +32,6 @@ if (keyword.includes(extraida)) {
     document.getElementById("downloads").innerHTML = "8295";
     document.getElementById("downsize").innerHTML = "(20 MB)";
     document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
-
     function getLink() {
       sessionStorage.clear(setTimeout(1000));
       document.getElementById("contador").style.display = "inline";
@@ -100,6 +99,7 @@ if (keyword.includes(extraida)) {
             document.getElementById("linkDownload").style.display = "inline";
           }
         }
+      }
       } else if (sessionStorage.getItem("setPagina") === "?como-construir-tu-propio-ordenador") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Cómo construir tu propio ordenador desde cero: una guía para principiantes Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Cómo construir tu propio ordenador desde cero: una guía para principiantes";
@@ -124,7 +124,7 @@ if (keyword.includes(extraida)) {
             document.getElementById("linkDownload").style.display = "inline";
           }
         }
-       
+      }
        } else if (sessionStorage.getItem("setPagina") === "?manual-definitivo-de-soldadura") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual Definitivo de Soldadura Electrónica Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual Definitivo de Soldadura Electrónica";
@@ -149,7 +149,7 @@ if (keyword.includes(extraida)) {
             document.getElementById("linkDownload").style.display = "inline";
           }
         }
-       
+      }
        } else if (sessionStorage.getItem("setPagina") === "?manual-de-reparacion-de-lavadoras-en-pdf") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de reparación de lavadoras Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de reparación de lavadoras";
@@ -174,7 +174,7 @@ if (keyword.includes(extraida)) {
             document.getElementById("linkDownload").style.display = "inline";
           }
         }
-       
+      }
        } else if (sessionStorage.getItem("setPagina") === "?manual-de-reparacion-de-refrigeradores") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Reparación de Refrigeradores Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de Reparación de Refrigeradores";
@@ -199,7 +199,8 @@ if (keyword.includes(extraida)) {
             document.getElementById("linkDownload").style.display = "inline";
           }
         }
-      }else{
+      }
+      } else {
         console.log("N/link");
       }
 
