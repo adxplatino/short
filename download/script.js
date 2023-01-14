@@ -76,8 +76,8 @@ if (keyword.includes(extraida)) {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Circuitos Eléctricos Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de Circuitos Eléctricos";
       document.getElementById("downtype").innerHTML = "PDF";
-      document.getElementById("downloads").innerHTML = "5600";
-      document.getElementById("downsize").innerHTML = "(12 MB)";
+      document.getElementById("downloads").innerHTML = "3123";
+      document.getElementById("downsize").innerHTML = "(14 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
 
       function getLink() {
