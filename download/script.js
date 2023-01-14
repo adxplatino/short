@@ -3,7 +3,6 @@ var keyword = [
 "?manual-de-electronica-basica-en-pdf",
 "?manual-de-circuitos-electricos-en-pdf",
 "?como-construir-tu-propio-ordenador",
-"?como-construir-tu-propio-ordenador",
 "?manual-definitivo-de-soldadura",
 "?manual-de-reparacion-de-lavadoras-en-pdf",
 "?manual-de-reparacion-de-refrigeradores"
