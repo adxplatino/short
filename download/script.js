@@ -20,6 +20,7 @@ var keyword = [
 ]
 var randomUrl = 
 ["/p/download-file.html",
+ "/p/download-file.html"
 ]
 var setPagina = window.location.search;
 var indice = setPagina.indexOf('=1');
