@@ -5,6 +5,11 @@ var keyword = [
 "?manual-reparacion-refrigeradores",
 "?antena-wifi-largo-alcance",
 "?manual-reparacion-de-celulares",
+"?manual-basico-excel",
+"?",
+"?",
+"?",
+"?",
 "?"
 ]
 var randomUrl = ["/p/get-download.html",
@@ -155,14 +160,14 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-       } else if (sessionStorage.getItem("setPagina") === "6") {
-      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de reparación de lavadoras Totalmente Gratis";
-      document.getElementById("downtitle").innerHTML = "Manual de reparación de lavadoras";
-      document.getElementById("downdesc").innerHTML = "descripcion";   
+       } else if (sessionStorage.getItem("setPagina") === "?manual-basico-excel") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Excel Basico Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Manual Excel Basico";
+      document.getElementById("downdesc").innerHTML = "¿Necesitas aprender a utilizar Excel?, no te preocupes, con este manual te lo ponemos muy fácil, hoy te traemos este excelente manual que te ayudara a aprender mejor la herramienta de Microsoft Excel.";   
       document.getElementById("downtype").innerHTML = "PDF";
-      document.getElementById("downloads").innerHTML = "6978";
-      document.getElementById("downsize").innerHTML = "(98 MB)";
-      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
+      document.getElementById("downloads").innerHTML = "4685";
+      document.getElementById("downsize").innerHTML = "(2 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1RY8SzQovsIOY4yzxi2q6n6ttAB93oneR");
 
       function getLink() {
         sessionStorage.clear(setTimeout(1000));
