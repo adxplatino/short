@@ -4,7 +4,7 @@ var keyword = [
 "?tecnico-electricista",
 "?manual-reparacion-refrigeradores",
 "?antena-wifi-largo-alcance",
-"?",
+"?manual-reparacion-de-celulares",
 "?"
 ]
 var randomUrl = ["/p/get-download.html",
@@ -129,14 +129,14 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-       } else if (sessionStorage.getItem("setPagina") === "5") {
-      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual Definitivo de Soldadura Electrónica Totalmente Gratis";
-      document.getElementById("downtitle").innerHTML = "Manual Definitivo de Soldadura Electrónica";
-      document.getElementById("downdesc").innerHTML = "descripcion";    
+       } else if (sessionStorage.getItem("setPagina") === "?manual-reparacion-de-celulares") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual Para Reparaciones de Teléfonos Celulares Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Manual Para Reparaciones de Teléfonos Celulares";
+      document.getElementById("downdesc").innerHTML = "Aprende a reparar celulares de la forma mas fácil y didáctica con este manual de reparación de celulares en español completo.";    
       document.getElementById("downtype").innerHTML = "PDF";
-      document.getElementById("downloads").innerHTML = "1142 ";
-      document.getElementById("downsize").innerHTML = "(47 MB)";
-      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
+      document.getElementById("downloads").innerHTML = "3628";
+      document.getElementById("downsize").innerHTML = "(9 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/101xVzDec6JMbzJ7Kqa3isk3RXf7N-TSt");
 
       function getLink() {
         sessionStorage.clear(setTimeout(1000));
