@@ -1,19 +1,3 @@
-function getLink(){
-document.getElementById("contador").style.display = "inline";
-document.getElementById("downboton").style.display = "none";
-let time_out = 1000;
-let counter_id;
-let seconds = 15;
-counter_id = setInterval(update_counter_link, time_out);
-function update_counter_link() {
-document.getElementById('link_button').innerHTML = (--seconds);
-if (!seconds) {
-clearInterval(counter_id);
-document.getElementById("contador").style.display = "none";
-document.getElementById("linkDownload").style.display = "inline";
-            }
-        }
-}
 var keyword = [
 "?coleccion-de-circuitos-de-electronica",
 "?manual-de-electronica-basica-en-pdf",
@@ -60,7 +44,7 @@ document.getElementById("contador").style.display = "none";
 document.getElementById("linkDownload").style.display = "inline";
             }
 }
-}
+            
 }else if(sessionStorage.getItem("setPagina") === "?manual-de-electronica-basica-en-pdf") {
 document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de electrónica básica Totalmente Gratis";
 document.getElementById("downtitle").innerHTML = "Manual de electrónica básica";
@@ -84,6 +68,7 @@ document.getElementById("contador").style.display = "none";
 document.getElementById("linkDownload").style.display = "inline";
             }
 }
+            
 }else{
 console.log("N/link");
 }
