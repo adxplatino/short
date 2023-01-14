@@ -1,60 +1,58 @@
-<script>
 function getLink(){
-document.getElementById(&quot;contador&quot;).style.display = &quot;inline&quot;;
-document.getElementById(&quot;downboton&quot;).style.display = &quot;none&quot;;
+document.getElementById("contador").style.display = "inline";
+document.getElementById("downboton").style.display = "none";
 let time_out = 1000;
 let counter_id;
 let seconds = 15;
 counter_id = setInterval(update_counter_link, time_out);
 function update_counter_link() {
-document.getElementById(&#39;link_button&#39;).innerHTML = (--seconds);
+document.getElementById('link_button').innerHTML = (--seconds);
 if (!seconds) {
 clearInterval(counter_id);
-document.getElementById(&quot;contador&quot;).style.display = &quot;none&quot;;
-document.getElementById(&quot;linkDownload&quot;).style.display = &quot;inline&quot;;
+document.getElementById("contador").style.display = "none";
+document.getElementById("linkDownload").style.display = "inline";
             }
         }
 }
 var keyword = [
-&quot;?coleccion-de-circuitos-de-electronica&quot;,
-&quot;?manual-de-electronica-basica-en-pdf&quot;,
+"?coleccion-de-circuitos-de-electronica",
+"?manual-de-electronica-basica-en-pdf",
 ]
 var randomUrl = 
-[&quot;/p/download-file.html&quot;,
+["/p/download-file.html",
 ]
 var setPagina = window.location.search;
-var indice = setPagina.indexOf(&#39;=1&#39;);
+var indice = setPagina.indexOf('=1');
 var extraida = setPagina.substring(0, indice);
 
 if (keyword.includes(extraida)) {
-    sessionStorage.setItem(&quot;setPagina&quot;, extraida);
+    sessionStorage.setItem("setPagina", extraida);
     var i = parseInt(Math.random() * randomUrl.length);
     location.href = randomUrl[i];
 
 } else if(keyword.includes(setPagina)) {
-    sessionStorage.setItem(&quot;setPagina&quot;, setPagina);
+    sessionStorage.setItem("setPagina", setPagina);
     var i = parseInt(Math.random() * randomUrl.length);
     location.href = randomUrl[i];
 }else{
   
- if (sessionStorage.getItem(&quot;setPagina&quot;) === &quot;?coleccion-de-circuitos-de-electronica&quot;) {
-        document.getElementById(&quot;donwload-title&quot;).innerHTML = &quot;Descarga Aqui La Colección de circuitos de electrónica Totalmente Gratis&quot;;
-        document.getElementById(&quot;downtitle&quot;).innerHTML = &quot;Colección de circuitos de electrónica&quot;;
-        document.getElementById(&quot;downtype&quot;).innerHTML = &quot;PDF&quot;;
-        document.getElementById(&quot;downloads&quot;).innerHTML = &quot;12654&quot;;
-        document.getElementById(&quot;downsize&quot;).innerHTML = &quot;(65 MB)&quot;;
-        document.getElementById(&quot;LINK&quot;).setAttribute(&quot;href&quot;, &quot;https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j&quot;);
+ if (sessionStorage.getItem("setPagina") === "?coleccion-de-circuitos-de-electronica") {
+        document.getElementById("donwload-title").innerHTML = "Descarga Aqui La Colección de circuitos de electrónica Totalmente Gratis";
+        document.getElementById("downtitle").innerHTML = "Colección de circuitos de electrónica";
+        document.getElementById("downtype").innerHTML = "PDF";
+        document.getElementById("downloads").innerHTML = "12654";
+        document.getElementById("downsize").innerHTML = "(65 MB)";
+        document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
    
-        }else if(sessionStorage.getItem(&quot;setPagina&quot;) === &quot;?manual-de-electronica-basica-en-pdf&quot;) {
-        document.getElementById(&quot;donwload-title&quot;).innerHTML = &quot;Descarga Aqui El Manual de electrónica básica Totalmente Gratis&quot;;
-        document.getElementById(&quot;downtitle&quot;).innerHTML = &quot;Manual de electrónica básica&quot;;
-        document.getElementById(&quot;downtype&quot;).innerHTML = &quot;PDF&quot;;
-        document.getElementById(&quot;downloads&quot;).innerHTML = &quot;4656&quot;;
-        document.getElementById(&quot;downsize&quot;).innerHTML = &quot;(28 MB)&quot;;
-        document.getElementById(&quot;LINK&quot;).setAttribute(&quot;href&quot;, &quot;https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j&quot;);
+        }else if(sessionStorage.getItem("setPagina") === "?manual-de-electronica-basica-en-pdf") {
+        document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de electrónica básica Totalmente Gratis";
+        document.getElementById("downtitle").innerHTML = "Manual de electrónica básica";
+        document.getElementById("downtype").innerHTML = "PDF";
+        document.getElementById("downloads").innerHTML = "4656";
+        document.getElementById("downsize").innerHTML = "(28 MB)";
+        document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
         }else{
-         console.log(&quot;N/link&quot;);
+         console.log("N/link");
         }
   
 }
-</script>
