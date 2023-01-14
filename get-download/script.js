@@ -1,7 +1,7 @@
 var keyword = [
 "?manual-electricidad-viviendas",
 "?contenido-vip",
-"?",
+"?tecnico-electricista",
 "?c",
 "?",
 "?",
@@ -77,14 +77,14 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-      } else if (sessionStorage.getItem("setPagina") === "3") {
-      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Circuitos Eléctricos Totalmente Gratis";
-      document.getElementById("downtitle").innerHTML = "Manual de Circuitos Eléctricos";
-      document.getElementById("downdesc").innerHTML = "descripcion";   
+      } else if (sessionStorage.getItem("setPagina") === "?tecnico-electricista") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Pack de Técnico Electricista Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Técnico Electricista [PACK PDF]";
+      document.getElementById("downdesc").innerHTML = "Técnico electricista Pack en PDF uno de los mejores contenidos para conocer todo sobre la electricidad.";   
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "3123";
-      document.getElementById("downsize").innerHTML = "(14 MB)";
-      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
+      document.getElementById("downsize").innerHTML = "(76 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/drive/folders/1yFYhzoAA-ZiezYXo1ACbLR56f1jgsu_c");
 
       function getLink() {
         sessionStorage.clear(setTimeout(1000));
