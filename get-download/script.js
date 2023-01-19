@@ -322,8 +322,8 @@ if (keyword.includes(extraida)) {
       document.getElementById("downdesc").innerHTML = "Descubre cómo reducir tu consumo de energía y ahorrar dinero en tu factura mensual sin sacrificar el confort de tu hogar.";
       document.getElementById("downtype").innerHTML = "MP4";
       document.getElementById("downloads").innerHTML = "5832";
-      document.getElementById("downsize").innerHTML = "(44 MB)";
-      document.getElementById("LINK").setAttribute("href", "https://www.youtube.com/watch?v=86dnJcN_xk4");
+      document.getElementById("downsize").innerHTML = "(107 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1lAqXIp95q1ZEjjvyaVPU_Iis76DIrm3V");
 
       function getLink() {
         sessionStorage.clear(setTimeout(1000));
