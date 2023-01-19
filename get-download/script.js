@@ -10,7 +10,7 @@ var keyword = [
 "?manual-word-excel-power-point-avanzado",
 "?manual-sobre-manejo-multimetro",
 "?200-proyectos-carpinteria-libro",
-"?"
+"?como-ahorrar-electricidad"
 ]
 var randomUrl = ["/p/get-download.html",
   "/p/get-download.html"
@@ -291,7 +291,7 @@ if (keyword.includes(extraida)) {
         }
       } 
         } else if (sessionStorage.getItem("setPagina") === "?200-proyectos-carpinteria-libro") {
-      document.getElementById("donwload-title").innerHTML = "Descarga Aqui Los 200 Planos de Carpintería Gratis Totalmente Gratis";
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui Los 200 Planos de Carpintería Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "200 Planos de Carpintería Gratis";
       document.getElementById("downdesc").innerHTML = "Aprende a fabricar muebles de madera con estos 200 planos de carpintería totalmente gratuitos.";
       document.getElementById("downtype").innerHTML = "PDF";
@@ -315,8 +315,34 @@ if (keyword.includes(extraida)) {
             document.getElementById("linkDownload").style.display = "inline";
           }
         }
-      }     
-       } else {
+      } 
+          } else if (sessionStorage.getItem("setPagina") === "?como-ahorrar-electricidad") {
+      document.getElementById("donwload-title").innerHTML = "Descubre Aqui Como Ahorrar 40% en tu factura eléctrica aplicando este simple truco! Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Ahorra 40% en tu factura eléctrica aplicando este simple truco!";
+      document.getElementById("downdesc").innerHTML = "Descubre cómo reducir tu consumo de energía y ahorrar dinero en tu factura mensual sin sacrificar el confort de tu hogar.";
+      document.getElementById("downtype").innerHTML = "MP4";
+      document.getElementById("downloads").innerHTML = "5832";
+      document.getElementById("downsize").innerHTML = "(44 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://www.youtube.com/watch?v=86dnJcN_xk4");
+
+      function getLink() {
+        sessionStorage.clear(setTimeout(1000));
+        document.getElementById("contador").style.display = "inline";
+        document.getElementById("downboton").style.display = "none";
+        let time_out = 1000;
+        let counter_id;
+        let seconds = 15;
+        counter_id = setInterval(update_counter_link, time_out);
+        function update_counter_link() {
+          document.getElementById('link_button').innerHTML = (--seconds);
+          if (!seconds) {
+            clearInterval(counter_id);
+            document.getElementById("contador").style.display = "none";
+            document.getElementById("linkDownload").style.display = "inline";
+          }
+        }
+      } 
+         } else {
         console.log("N/link");
       }
 
