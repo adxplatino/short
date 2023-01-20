@@ -52,50 +52,16 @@ if (keyword.includes(extraida)) {
     document.getElementById("downloads").innerHTML = "8295";
     document.getElementById("downsize").innerHTML = "(20 MB)";
     document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
-    function getLink() {
-      sessionStorage.clear(setTimeout(1000));
-      document.getElementById("contador").style.display = "inline";
-      document.getElementById("downboton").style.display = "none";
-      let time_out = 1000;
-      let counter_id;
-      let seconds = 15;
-      counter_id = setInterval(update_counter_link, time_out);
-      function update_counter_link() {
-        document.getElementById('link_button').innerHTML = (--seconds);
-        if (!seconds) {
-          clearInterval(counter_id);
-          document.getElementById("contador").style.display = "none";
-          document.getElementById("linkDownload").style.display = "inline";
-        }
-      }
-    }
     
-    } else if (sessionStorage.getItem("setPagina") === "?manual-de-electronica-basica-en-pdf") {
+       } else if (sessionStorage.getItem("setPagina") === "?manual-de-electronica-basica-en-pdf") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de electrónica básica Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de electrónica básica";
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "5600";
       document.getElementById("downsize").innerHTML = "(12 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
-
-      function getLink() {
-        sessionStorage.clear(setTimeout(1000));
-        document.getElementById("contador").style.display = "inline";
-        document.getElementById("downboton").style.display = "none";
-        let time_out = 1000;
-        let counter_id;
-        let seconds = 15;
-        counter_id = setInterval(update_counter_link, time_out);
-        function update_counter_link() {
-          document.getElementById('link_button').innerHTML = (--seconds);
-          if (!seconds) {
-            clearInterval(counter_id);
-            document.getElementById("contador").style.display = "none";
-            document.getElementById("linkDownload").style.display = "inline";
-          }
-        }
-      }
-      } else if (sessionStorage.getItem("setPagina") === "?manual-de-circuitos-electricos-en-pdf") {
+      
+       } else if (sessionStorage.getItem("setPagina") === "?manual-de-circuitos-electricos-en-pdf") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Circuitos Eléctricos Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de Circuitos Eléctricos";
       document.getElementById("downtype").innerHTML = "PDF";
@@ -103,48 +69,14 @@ if (keyword.includes(extraida)) {
       document.getElementById("downsize").innerHTML = "(14 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
 
-      function getLink() {
-        sessionStorage.clear(setTimeout(1000));
-        document.getElementById("contador").style.display = "inline";
-        document.getElementById("downboton").style.display = "none";
-        let time_out = 1000;
-        let counter_id;
-        let seconds = 15;
-        counter_id = setInterval(update_counter_link, time_out);
-        function update_counter_link() {
-          document.getElementById('link_button').innerHTML = (--seconds);
-          if (!seconds) {
-            clearInterval(counter_id);
-            document.getElementById("contador").style.display = "none";
-            document.getElementById("linkDownload").style.display = "inline";
-          }
-        }
-      }
-      } else if (sessionStorage.getItem("setPagina") === "?como-construir-tu-propio-ordenador") {
+       } else if (sessionStorage.getItem("setPagina") === "?como-construir-tu-propio-ordenador") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Cómo construir tu propio ordenador desde cero: una guía para principiantes Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Cómo construir tu propio ordenador desde cero: una guía para principiantes";
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "9715";
       document.getElementById("downsize").innerHTML = "(6 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
-
-      function getLink() {
-        sessionStorage.clear(setTimeout(1000));
-        document.getElementById("contador").style.display = "inline";
-        document.getElementById("downboton").style.display = "none";
-        let time_out = 1000;
-        let counter_id;
-        let seconds = 15;
-        counter_id = setInterval(update_counter_link, time_out);
-        function update_counter_link() {
-          document.getElementById('link_button').innerHTML = (--seconds);
-          if (!seconds) {
-            clearInterval(counter_id);
-            document.getElementById("contador").style.display = "none";
-            document.getElementById("linkDownload").style.display = "inline";
-          }
-        }
-      }
+        
        } else if (sessionStorage.getItem("setPagina") === "?manual-definitivo-de-soldadura") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual Definitivo de Soldadura Electrónica Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual Definitivo de Soldadura Electrónica";
@@ -153,23 +85,6 @@ if (keyword.includes(extraida)) {
       document.getElementById("downsize").innerHTML = "(47 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
 
-      function getLink() {
-        sessionStorage.clear(setTimeout(1000));
-        document.getElementById("contador").style.display = "inline";
-        document.getElementById("downboton").style.display = "none";
-        let time_out = 1000;
-        let counter_id;
-        let seconds = 15;
-        counter_id = setInterval(update_counter_link, time_out);
-        function update_counter_link() {
-          document.getElementById('link_button').innerHTML = (--seconds);
-          if (!seconds) {
-            clearInterval(counter_id);
-            document.getElementById("contador").style.display = "none";
-            document.getElementById("linkDownload").style.display = "inline";
-          }
-        }
-      }
        } else if (sessionStorage.getItem("setPagina") === "?manual-de-reparacion-de-lavadoras-en-pdf") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de reparación de lavadoras Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de reparación de lavadoras";
@@ -177,24 +92,7 @@ if (keyword.includes(extraida)) {
       document.getElementById("downloads").innerHTML = "6978";
       document.getElementById("downsize").innerHTML = "(98 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
-
-      function getLink() {
-        sessionStorage.clear(setTimeout(1000));
-        document.getElementById("contador").style.display = "inline";
-        document.getElementById("downboton").style.display = "none";
-        let time_out = 1000;
-        let counter_id;
-        let seconds = 15;
-        counter_id = setInterval(update_counter_link, time_out);
-        function update_counter_link() {
-          document.getElementById('link_button').innerHTML = (--seconds);
-          if (!seconds) {
-            clearInterval(counter_id);
-            document.getElementById("contador").style.display = "none";
-            document.getElementById("linkDownload").style.display = "inline";
-          }
-        }
-      }
+         
        } else if (sessionStorage.getItem("setPagina") === "?manual-de-reparacion-de-refrigeradores") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Reparación de Refrigeradores Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de Reparación de Refrigeradores";
@@ -202,25 +100,8 @@ if (keyword.includes(extraida)) {
       document.getElementById("downloads").innerHTML = "7430";
       document.getElementById("downsize").innerHTML = "(14 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
-
-      function getLink() {
-        sessionStorage.clear(setTimeout(1000));
-        document.getElementById("contador").style.display = "inline";
-        document.getElementById("downboton").style.display = "none";
-        let time_out = 1000;
-        let counter_id;
-        let seconds = 15;
-        counter_id = setInterval(update_counter_link, time_out);
-        function update_counter_link() {
-          document.getElementById('link_button').innerHTML = (--seconds);
-          if (!seconds) {
-            clearInterval(counter_id);
-            document.getElementById("contador").style.display = "none";
-            document.getElementById("linkDownload").style.display = "inline";
-          }
-        }
-      }
-         } else if (sessionStorage.getItem("setPagina") === "?manual-electricidad-basica") {
+         
+       } else if (sessionStorage.getItem("setPagina") === "?manual-electricidad-basica") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Electricidad Básica Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de Electricidad Básica";
       document.getElementById("downtype").innerHTML = "PDF";
@@ -228,24 +109,7 @@ if (keyword.includes(extraida)) {
       document.getElementById("downsize").innerHTML = "(14 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
 
-      function getLink() {
-        sessionStorage.clear(setTimeout(1000));
-        document.getElementById("contador").style.display = "inline";
-        document.getElementById("downboton").style.display = "none";
-        let time_out = 1000;
-        let counter_id;
-        let seconds = 15;
-        counter_id = setInterval(update_counter_link, time_out);
-        function update_counter_link() {
-          document.getElementById('link_button').innerHTML = (--seconds);
-          if (!seconds) {
-            clearInterval(counter_id);
-            document.getElementById("contador").style.display = "none";
-            document.getElementById("linkDownload").style.display = "inline";
-          }
-        }
-      }
-        } else if (sessionStorage.getItem("setPagina") === "?manual-electricidad-domiciliaria") {
+       } else if (sessionStorage.getItem("setPagina") === "?manual-electricidad-domiciliaria") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Electricidad Domiciliaria Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de Electricidad Domiciliaria";
       document.getElementById("downtype").innerHTML = "PDF";
@@ -253,32 +117,16 @@ if (keyword.includes(extraida)) {
       document.getElementById("downsize").innerHTML = "(14 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
 
-      function getLink() {
-        sessionStorage.clear(setTimeout(1000));
-        document.getElementById("contador").style.display = "inline";
-        document.getElementById("downboton").style.display = "none";
-        let time_out = 1000;
-        let counter_id;
-        let seconds = 15;
-        counter_id = setInterval(update_counter_link, time_out);
-        function update_counter_link() {
-          document.getElementById('link_button').innerHTML = (--seconds);
-          if (!seconds) {
-            clearInterval(counter_id);
-            document.getElementById("contador").style.display = "none";
-            document.getElementById("linkDownload").style.display = "inline";
-          }
-        }
-      }
-        } else if (sessionStorage.getItem("setPagina") === "?manual-instalacion-tableros-electricos") {
+       } else if (sessionStorage.getItem("setPagina") === "?manual-instalacion-tableros-electricos") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Instalación de Tableros Eléctricos Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de Instalación de Tableros Eléctricos";
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "7430";
       document.getElementById("downsize").innerHTML = "(14 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
-        } else {
+          
+       } else {
         console.log("N/link");
-      }
+       }
 
-    }
+}
