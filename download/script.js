@@ -1,3 +1,20 @@
+function getLink() {
+sessionStorage.clear(setTimeout(1000));
+document.getElementById("contador").style.display = "inline";
+document.getElementById("downboton").style.display = "none";
+let time_out = 1000;
+let counter_id;
+let seconds = 15;
+counter_id = setInterval(update_counter_link, time_out);
+function update_counter_link() {
+document.getElementById('link_button').innerHTML = (--seconds);
+if (!seconds) {
+clearInterval(counter_id);
+document.getElementById("contador").style.display = "none";
+document.getElementById("linkDownload").style.display = "inline";
+  }
+ }
+}
 var keyword = [
 "?coleccion-de-circuitos-de-electronica",
 "?manual-de-electronica-basica-en-pdf",
@@ -5,7 +22,10 @@ var keyword = [
 "?como-construir-tu-propio-ordenador",
 "?manual-definitivo-de-soldadura",
 "?manual-de-reparacion-de-lavadoras-en-pdf",
-"?manual-de-reparacion-de-refrigeradores"
+"?manual-de-reparacion-de-refrigeradores",
+"?manual-electricidad-basica",
+"?manual-electricidad-domiciliaria",
+"?manual-instalacion-tableros-electricos"  
 ]
 var randomUrl = ["/p/download-file.html",
   "/p/download-file.html"
@@ -200,7 +220,64 @@ if (keyword.includes(extraida)) {
           }
         }
       }
-      } else {
+         } else if (sessionStorage.getItem("setPagina") === "?manual-electricidad-basica") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Electricidad Básica Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Manual de Electricidad Básica";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "7430";
+      document.getElementById("downsize").innerHTML = "(14 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
+
+      function getLink() {
+        sessionStorage.clear(setTimeout(1000));
+        document.getElementById("contador").style.display = "inline";
+        document.getElementById("downboton").style.display = "none";
+        let time_out = 1000;
+        let counter_id;
+        let seconds = 15;
+        counter_id = setInterval(update_counter_link, time_out);
+        function update_counter_link() {
+          document.getElementById('link_button').innerHTML = (--seconds);
+          if (!seconds) {
+            clearInterval(counter_id);
+            document.getElementById("contador").style.display = "none";
+            document.getElementById("linkDownload").style.display = "inline";
+          }
+        }
+      }
+        } else if (sessionStorage.getItem("setPagina") === "?manual-electricidad-domiciliaria") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Electricidad Domiciliaria Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Manual de Electricidad Domiciliaria";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "7430";
+      document.getElementById("downsize").innerHTML = "(14 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
+
+      function getLink() {
+        sessionStorage.clear(setTimeout(1000));
+        document.getElementById("contador").style.display = "inline";
+        document.getElementById("downboton").style.display = "none";
+        let time_out = 1000;
+        let counter_id;
+        let seconds = 15;
+        counter_id = setInterval(update_counter_link, time_out);
+        function update_counter_link() {
+          document.getElementById('link_button').innerHTML = (--seconds);
+          if (!seconds) {
+            clearInterval(counter_id);
+            document.getElementById("contador").style.display = "none";
+            document.getElementById("linkDownload").style.display = "inline";
+          }
+        }
+      }
+        } else if (sessionStorage.getItem("setPagina") === "?manual-instalacion-tableros-electricos") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Instalación de Tableros Eléctricos Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Manual de Instalación de Tableros Eléctricos";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "7430";
+      document.getElementById("downsize").innerHTML = "(14 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1EvjzoTooiYtMt3r9JqBDUEqN8TlPR50j");
+        } else {
         console.log("N/link");
       }
 
