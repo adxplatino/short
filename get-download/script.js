@@ -165,7 +165,7 @@ if (keyword.includes(extraida)) {
       document.getElementById("downdesc").innerHTML = "Excel is a powerful tool that can help you organize, analyze and present your data in a meaningful way. To truly master it, you need to know all the formulas, functions, shortcuts, and tips that it offers.";
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "9653";
-      document.getElementById("downsize").innerHTML = "(107 MB)";
+      document.getElementById("downsize").innerHTML = "(1 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/19DSIWNboZFqHtY3B1KRr3C1bHtPYHXH0");
             
        } else {
