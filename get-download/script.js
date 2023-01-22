@@ -28,7 +28,8 @@ var keyword = [
 "?manual-word-excel-power-point-avanzado",
 "?manual-sobre-manejo-multimetro",
 "?200-proyectos-carpinteria-libro",
-"?como-ahorrar-electricidad"
+"?como-ahorrar-electricidad",
+"?excel-manual"  
 ]
 
 var randomUrl = ["/p/get-download.html",
@@ -155,6 +156,15 @@ if (keyword.includes(extraida)) {
       document.getElementById("downdesc").innerHTML = "Descubre cómo reducir tu consumo de energía y ahorrar dinero en tu factura mensual sin sacrificar el confort de tu hogar.";
       document.getElementById("downtype").innerHTML = "MP4";
       document.getElementById("downloads").innerHTML = "5832";
+      document.getElementById("downsize").innerHTML = "(107 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1lAqXIp95q1ZEjjvyaVPU_Iis76DIrm3V");
+            
+       } else if (sessionStorage.getItem("setPagina") === "?excel-manual") {
+      document.getElementById("donwload-title").innerHTML = "Full Download Here The Microsoft Excel Manual for Beginners For Free";
+      document.getElementById("downtitle").innerHTML = "Microsoft Excel Manual for Beginners";
+      document.getElementById("downdesc").innerHTML = "Excel is a powerful tool that can help you organize, analyze and present your data in a meaningful way. To truly master it, you need to know all the formulas, functions, shortcuts, and tips that it offers.";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "9653";
       document.getElementById("downsize").innerHTML = "(107 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1lAqXIp95q1ZEjjvyaVPU_Iis76DIrm3V");
             
