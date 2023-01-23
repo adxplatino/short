@@ -66,7 +66,7 @@ if (keyword.includes(extraida)) {
       document.getElementById("downtype").innerHTML = "Galery";
       document.getElementById("downloads").innerHTML = "5600";
       document.getElementById("downsize").innerHTML = "(132 MB)";
-      document.getElementById("LINK").setAttribute("href", "https://t.co/AYXYygxOfy");
+      document.getElementById("LINK").setAttribute("href", "https://t.co/irtg2rIWIM");
 
        } else if (sessionStorage.getItem("setPagina") === "?tecnico-electricista") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Pack de Técnico Electricista Totalmente Gratis";
