@@ -25,7 +25,8 @@ var keyword = [
 "?manual-de-reparacion-de-refrigeradores",
 "?manual-electricidad-basica",
 "?manual-electricidad-domiciliaria",
-"?manual-instalacion-tableros-electricos"  
+"?manual-instalacion-tableros-electricos",
+"??manual-basico-excel"
 ]
 var randomUrl = ["/p/download-file.html",
   "/p/download-file.html"
@@ -124,6 +125,14 @@ if (keyword.includes(extraida)) {
       document.getElementById("downloads").innerHTML = "9946";
       document.getElementById("downsize").innerHTML = "(2 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1rejReWvAOWJj-NuDCRJO6LWIkhMJgKWo");
+          
+       } else if (sessionStorage.getItem("setPagina") === "?manual-basico-excel") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual Básico de Excel Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Manual Básico de Excel en PDF";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "5963";
+      document.getElementById("downsize").innerHTML = "(2.5 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1DIcGiJ0fWqzOBX8rFgJOI7T_KlciVU_L");
           
        } else {
         console.log("N/link");
