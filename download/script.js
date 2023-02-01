@@ -26,7 +26,7 @@ var keyword = [
 "?manual-electricidad-basica",
 "?manual-electricidad-domiciliaria",
 "?manual-instalacion-tableros-electricos",
-"??manual-basico-excel"
+"?manual-basico-excel"
 ]
 var randomUrl = ["/p/download-file.html",
   "/p/download-file.html"
