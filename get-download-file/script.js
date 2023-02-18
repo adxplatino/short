@@ -65,7 +65,7 @@ if (keyword.includes(extraida)) {
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "3689";
       document.getElementById("downsize").innerHTML = "(7 MB)";
-      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/19DSIWNboZFqHtY3B1KRr3C1bHtPYHXH0");
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1gMeSFz6uBMVwf8tA-fJgw-zP809Kr_TR");
             
        } else {
         console.log("N/link");
