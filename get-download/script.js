@@ -28,6 +28,7 @@ var keyword = [
 "?manual-word-excel-power-point-avanzado",
 "?manual-sobre-manejo-multimetro",
 "?200-proyectos-carpinteria-libro",
+"?1000-palabras-usadas-ingles",
 "?como-ahorrar-electricidad"  
 ]
 
@@ -157,6 +158,15 @@ if (keyword.includes(extraida)) {
       document.getElementById("downloads").innerHTML = "5832";
       document.getElementById("downsize").innerHTML = "(107 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1lAqXIp95q1ZEjjvyaVPU_Iis76DIrm3V");
+            
+       } else if (sessionStorage.getItem("setPagina") === "?1000-palabras-usadas-ingles") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui Las 1000 Palabras Más Usadas en Inglés en PDF Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Las 1000 Palabras Más Usadas en Inglés en PDF";
+      document.getElementById("downdesc").innerHTML = "Aprende las 1000 palabras más usadas en inglés con este listado en PDF totalmente gratuito.";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "4998";
+      document.getElementById("downsize").innerHTML = "(622 KB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/17mC3IbtXxQhTq3d6TpuE33Zzi655XvXK");
             
        } else {
         console.log("N/link");
