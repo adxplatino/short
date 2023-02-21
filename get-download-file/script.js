@@ -21,8 +21,8 @@ var keyword = [
 "?excel-manual"  
 ]
 
-var randomUrl = ["/p/get-download-file.html",
-  "/p/get-download-file.html"
+var randomUrl = ["/p/get-download-file.html#gsc.tab=0&gsc.q=best%20usa%20mba",
+  "/p/get-download-file.html#gsc.tab=0&gsc.q=best%20usa%20mba"
 ]
 
 var setPagina = window.location.search;
