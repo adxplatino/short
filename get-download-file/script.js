@@ -21,8 +21,27 @@ var keyword = [
 "?excel-manual"  
 ]
 
-var randomUrl = ["/p/get-download-file.html#gsc.tab=0&gsc.q=best%20usa%20mba",
-  "/p/get-download-file.html#gsc.tab=0&gsc.q=best%20usa%20mba"
+var randomUrl = [
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20student%20profile",
+"/p/get-download.html#gsc.tab=0&gsc.q=best%20mba%20degree",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20master%20of",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20hrm",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20leadership",
+"/p/get-download.html#gsc.tab=0&gsc.q=wharton%20executive%20mba",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20requirements",
+"/p/get-download.html#gsc.tab=0&gsc.q=fast%20track%20mba",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20graduate",
+"/p/get-download.html#gsc.tab=0&gsc.q=part%20time%20mba%20colleges",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20grad",
+"/p/get-download.html#gsc.tab=0&gsc.q=cornell%20mba",
+"/p/get-download.html#gsc.tab=0&gsc.q=xlri%20executive%20mba",
+"/p/get-download.html#gsc.tab=0&gsc.q=an%20mba%20degree",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20colleges",
+"/p/get-download.html#gsc.tab=0&gsc.q=distance%20mba%20programs",
+"/p/get-download.html#gsc.tab=0&gsc.q=open%20university%20mba",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20degree%20salary",
+"/p/get-download.html#gsc.tab=0&gsc.q=iese%20mba",
+"/p/get-download.html#gsc.tab=0&gsc.q=an%20mba"
 ]
 
 var setPagina = window.location.search;
