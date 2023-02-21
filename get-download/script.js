@@ -33,8 +33,15 @@ var keyword = [
 "?manual-instalacion-tableros-electricos"
 ]
 
-var randomUrl = ["/p/get-download.html#gsc.tab=0&gsc.q=estudiar%20mba",
-  "/p/get-download.html#gsc.tab=0&gsc.q=estudiar%20mba"
+var randomUrl = [
+"/p/get-download.html#gsc.tab=0&gsc.q=ranking%20mba%20latinoamérica%202023",
+"/p/get-download.html#gsc.tab=0&gsc.q=mejores%20mba%20españa",
+"/p/get-download.html#gsc.tab=0&gsc.q=ranking%20mba%202023",
+"/p/get-download.html#gsc.tab=0&gsc.q=ranking%20mba%20latinoamérica%20qs",
+"/p/get-download.html#gsc.tab=0&gsc.q=mejores%20mba%20del%20mundo",
+"/p/get-download.html#gsc.tab=0&gsc.q=ranking%20mba%20argentina",
+"/p/get-download.html#gsc.tab=0&gsc.q=mejores%20mba%20online%20latinoamérica",
+"/p/get-download.html#gsc.tab=0&gsc.q=ucema%20mba%20ranking"
 ]
 
 var setPagina = window.location.search;
