@@ -33,8 +33,8 @@ var keyword = [
 "?manual-instalacion-tableros-electricos"
 ]
 
-var randomUrl = ["/p/get-download.html",
-  "/p/get-download.html"
+var randomUrl = ["/p/get-download.html#gsc.tab=0&gsc.q=estudiar%20mba",
+  "/p/get-download.html#gsc.tab=0&gsc.q=estudiar%20mba"
 ]
 
 var setPagina = window.location.search;
