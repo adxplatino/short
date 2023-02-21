@@ -34,6 +34,7 @@ var keyword = [
 ]
 
 var randomUrl = [
+"/p/get-download.html#gsc.tab=0&gsc.q=estudiar%20mba",  
 "/p/get-download.html#gsc.tab=0&gsc.q=ranking%20mba%20latinoamérica%202023",
 "/p/get-download.html#gsc.tab=0&gsc.q=mejores%20mba%20españa",
 "/p/get-download.html#gsc.tab=0&gsc.q=ranking%20mba%202023",
