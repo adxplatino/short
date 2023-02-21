@@ -29,7 +29,8 @@ var keyword = [
 "?manual-sobre-manejo-multimetro",
 "?200-proyectos-carpinteria-libro",
 "?1000-palabras-usadas-ingles",
-"?como-ahorrar-electricidad"  
+"?como-ahorrar-electricidad",
+"?manual-instalacion-tableros-electricos"
 ]
 
 var randomUrl = ["/p/get-download.html",
@@ -167,6 +168,15 @@ if (keyword.includes(extraida)) {
       document.getElementById("downloads").innerHTML = "4998";
       document.getElementById("downsize").innerHTML = "(622 KB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/17mC3IbtXxQhTq3d6TpuE33Zzi655XvXK");
+            
+       } else if (sessionStorage.getItem("setPagina") === "?manual-instalacion-tableros-electricos") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de Instalación para tableros eléctricos Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Manual de Instalación para tableros eléctricos";
+      document.getElementById("downdesc").innerHTML = "En este manual tecnico aprenderas como realizar el montaje y cableado de un tablero de Distribución básico para una vivienda.";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "5694";
+      document.getElementById("downsize").innerHTML = "(2 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/175urzSQj_OlGxzYdBgxRq-3tpRywgGuP");
             
        } else {
         console.log("N/link");
