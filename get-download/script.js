@@ -31,7 +31,7 @@ var keyword = [
 "?1000-palabras-usadas-ingles",
 "?como-ahorrar-electricidad",
 "?manual-instalacion-tableros-electricos",
-"??curso-reparacion-herramientas-electricas"
+"?curso-reparacion-herramientas-electricas"
 ]
 
 var randomUrl = [
