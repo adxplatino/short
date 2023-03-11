@@ -44,6 +44,16 @@ var randomUrl = [
 "/p/get-download.html#gsc.tab=0&gsc.q=ranking%20mba%20argentina",
 "/p/get-download.html#gsc.tab=0&gsc.q=mejores%20mba%20online%20latinoamérica",
 "/p/get-download.html#gsc.tab=0&gsc.q=ucema%20mba%20ranking"
+"/p/get-download.html#gsc.tab=0&gsc.q=estudiar%20mba%20online",
+"/p/get-download.html#gsc.tab=0&gsc.q=egade%20mba%20online",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20online%20economico",
+"/p/get-download.html#gsc.tab=0&gsc.q=master%20en%20business%20management",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20international",
+"/p/get-download.html#gsc.tab=0&gsc.q=maestria%20en%20administración%20de%20empresas",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20online",
+"/p/get-download.html#gsc.tab=0&gsc.q=mejores%20mba%20del%20mundo",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20finanzas",
+"/p/get-download.html#gsc.tab=0&gsc.q=mba%20virtual"
 ]
 
 var setPagina = window.location.search;
