@@ -30,7 +30,8 @@ var keyword = [
 "?200-proyectos-carpinteria-libro",
 "?1000-palabras-usadas-ingles",
 "?como-ahorrar-electricidad",
-"?manual-instalacion-tableros-electricos"
+"?manual-instalacion-tableros-electricos",
+"??curso-reparacion-herramientas-electricas"
 ]
 
 var randomUrl = [
@@ -185,6 +186,15 @@ if (keyword.includes(extraida)) {
       document.getElementById("downloads").innerHTML = "5694";
       document.getElementById("downsize").innerHTML = "(2 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/175urzSQj_OlGxzYdBgxRq-3tpRywgGuP");
+            
+       } else if (sessionStorage.getItem("setPagina") === "?curso-reparacion-herramientas-electricas") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Curso de Reparación de Herramientas Eléctricas Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Curso de Reparación de Herramientas Eléctricas";
+      document.getElementById("downdesc").innerHTML = "Cuidar y reparar sus herramientas eléctricas es muy importante, con esto tendrán una vida útil mas larga y realizarán perfectamente las labores que necesite.";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "6923";
+      document.getElementById("downsize").innerHTML = "(1.1 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1G3G184vYzkLDPLDJkbOBG1F3WupZy7IN");
             
        } else {
         console.log("N/link");
