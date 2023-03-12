@@ -43,7 +43,7 @@ var randomUrl = [
 "/p/get-download.html#gsc.tab=0&gsc.q=mejores%20mba%20del%20mundo",
 "/p/get-download.html#gsc.tab=0&gsc.q=ranking%20mba%20argentina",
 "/p/get-download.html#gsc.tab=0&gsc.q=mejores%20mba%20online%20latinoamérica",
-"/p/get-download.html#gsc.tab=0&gsc.q=ucema%20mba%20ranking"
+"/p/get-download.html#gsc.tab=0&gsc.q=ucema%20mba%20ranking",
 "/p/get-download.html#gsc.tab=0&gsc.q=estudiar%20mba%20online",
 "/p/get-download.html#gsc.tab=0&gsc.q=egade%20mba%20online",
 "/p/get-download.html#gsc.tab=0&gsc.q=mba%20online%20economico",
