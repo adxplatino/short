@@ -210,10 +210,10 @@ if (keyword.includes(extraida)) {
        } else if (sessionStorage.getItem("setPagina") === "?mecanica-automotriz") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de mecánica automotriz básica Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "Manual de mecánica automotriz básica";
-      document.getElementById("downdesc").innerHTML = "Cuidar y reparar sus herramientas eléctricas es muy importante, con esto tendrán una vida útil mas larga y realizarán perfectamente las labores que necesite.";
+      document.getElementById("downdesc").innerHTML = "Manual de mecánica básica. Esto no pretende ser un curso de mecánica sino un manual para dueños de auto que no sepan nada.";
       document.getElementById("downtype").innerHTML = "PDF";
       document.getElementById("downloads").innerHTML = "6450";
-      document.getElementById("downsize").innerHTML = "(1.1 MB)";
+      document.getElementById("downsize").innerHTML = "(169 KB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1qTv9QhF5yg1acSZKnzecJBRhlm2X4rvW");
             
        } else {
