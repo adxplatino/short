@@ -31,7 +31,8 @@ var keyword = [
 "?1000-palabras-usadas-ingles",
 "?como-ahorrar-electricidad",
 "?manual-instalacion-tableros-electricos",
-"?curso-reparacion-herramientas-electricas"
+"?curso-reparacion-herramientas-electricas",
+"?mecanica-automotriz"
 ]
 
 var randomUrl = [
@@ -205,6 +206,15 @@ if (keyword.includes(extraida)) {
       document.getElementById("downloads").innerHTML = "6923";
       document.getElementById("downsize").innerHTML = "(1.1 MB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1G3G184vYzkLDPLDJkbOBG1F3WupZy7IN");
+            
+       } else if (sessionStorage.getItem("setPagina") === "?mecanica-automotriz") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Manual de mecánica automotriz básica Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "Manual de mecánica automotriz básica";
+      document.getElementById("downdesc").innerHTML = "Cuidar y reparar sus herramientas eléctricas es muy importante, con esto tendrán una vida útil mas larga y realizarán perfectamente las labores que necesite.";
+      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downloads").innerHTML = "6450";
+      document.getElementById("downsize").innerHTML = "(1.1 MB)";
+      document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1qTv9QhF5yg1acSZKnzecJBRhlm2X4rvW");
             
        } else {
         console.log("N/link");
