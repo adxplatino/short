@@ -15,7 +15,13 @@ document.getElementById("linkDownload").style.display = "inline";
   }
  }
 }
-
+window.onload = function() {
+  // Verifica si el elemento que quieres borrar existe en sessionStorage
+  if (sessionStorage.getItem('setPagina')) {
+    // Borra el elemento del sessionStorage
+    sessionStorage.removeItem('setPagina', setTimeout(1000));
+  }
+};
 var keyword = [
 "?coleccion-de-circuitos-de-electronica",
 "?manual-de-electronica-basica-en-pdf",
