@@ -28,7 +28,7 @@ if (urlActual.includes('?descargar-archivo-1')) {
     agregarEnlace('?descargar-archivo-1?imagen-3');
   } else if (urlActual.includes('imagen-3')) {
     agregarImagen('https://i.imgur.com/QLcIa2c.jpeg');
-    agregarEnlace('?descargar-archivo-1?imagen-4');
+    agregarEnlace('?descargar-archivo-1');
   } else {
     agregarImagen('https://i.imgur.com/ne9KZtQ.jpeg');
     agregarEnlace('?descargar-archivo-1?imagen-2');
