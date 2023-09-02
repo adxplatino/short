@@ -17,7 +17,7 @@ function agregarImagen(src) {
 function agregarEnlace(src) {
   var enlace = document.createElement('a');
   enlace.href = src;
-  enlace.textContent = 'CONTINUAR';
+  enlace.textContent = 'SIGUIENTE >>>>';
   var container = document.getElementById('enlaceContainer');
   container.appendChild(enlace);
 }  
