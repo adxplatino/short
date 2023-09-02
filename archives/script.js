@@ -1,7 +1,7 @@
 var urls = [
-  "https://www.infoproyectos.com/p/the-importance-of-insurance.html",
-  "https://www.infoproyectos.com/p/definition-of-insurance.html",
-  "https://www.infoproyectos.com/p/fire-insurance-types.html"
+  "https://www.infoproyectos.com/p/cost-health-insurance-family.html",
+  "https://www.infoproyectos.com/p/right-age-purchase-health-insurance.html",
+  "https://www.infoproyectos.com/p/tips-choosing-right-insurance-company.html"
 ];
 
 var urlActual = window.location.href;
