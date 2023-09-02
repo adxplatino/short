@@ -24,15 +24,13 @@ function agregarEnlace(src) {
 
 if (urlActual.includes('?descargar-archivo-1')) {
   if (urlActual.includes('imagen-2')) {
-    agregarImagen('https://i.imgur.com/DxCGpCv.jpeg');
+    agregarImagen('https://i.imgur.com/jtelAFz.jpeg');
     agregarEnlace('?descargar-archivo-1?imagen-3');
   } else if (urlActual.includes('imagen-3')) {
-    agregarImagen('https://i.imgur.com/x5OK4eS.jpeg');
+    agregarImagen('https://i.imgur.com/QLcIa2c.jpeg');
     agregarEnlace('?descargar-archivo-1?imagen-4');
-  } else if (urlActual.includes('imagen-4')) {
-    agregarImagen('https://i.imgur.com/qY6YRLc.jpeg');
   } else {
-    agregarImagen('https://www.apuntesdeelectronica.com/imagenes/apuntes-electricidad.jpg');
+    agregarImagen('https://i.imgur.com/ne9KZtQ.jpeg');
     agregarEnlace('?descargar-archivo-1?imagen-2');
   }
 } 
