@@ -35,7 +35,7 @@ if (urlActual.includes('?descargar-archivo-1')) {
     agregarEnlace('?descargar-archivo-1#imagen-5', 'SIGUIENTE >>>>');
   } else if (urlActual.includes('imagen-5')) {
     agregarImagen('https://i.imgur.com/JnwiHJU.jpg');
-    agregarEnlace('?descargar-archivo-1', '<< IR AL PRINCIPIO >>');
+    agregarEnlace('?descargar-archivo-1', '<<<< IR AL PRINCIPIO');
   } else {
     agregarImagen('https://i.imgur.com/0qN7zxE.jpg');
     agregarEnlace('?descargar-archivo-1#imagen-2', 'SIGUIENTE >>>>');
@@ -44,20 +44,20 @@ if (urlActual.includes('?descargar-archivo-1')) {
 
 if (urlActual.includes('?descargar-archivo-2')) {
   if (urlActual.includes('imagen-2')) {
-    agregarImagen('00000');
+    agregarImagen('https://i.imgur.com/FN3CQI8.png');
     agregarEnlace('?descargar-archivo-2#imagen-3', 'SIGUIENTE >>>>');
   } else if (urlActual.includes('imagen-3')) {
-    agregarImagen('00000');
+    agregarImagen('https://i.imgur.com/K7ZZ1Gg.png');
     agregarEnlace('?descargar-archivo-2#imagen-4', 'SIGUIENTE >>>>');
   } else if (urlActual.includes('imagen-4')) {
-    agregarImagen('00000');
+    agregarImagen('https://i.imgur.com/smjsT5Y.png');
     agregarEnlace('?descargar-archivo-2#imagen-5', 'SIGUIENTE >>>>');
   } else if (urlActual.includes('imagen-5')) {
-    agregarImagen('00000');
-    agregarEnlace('?descargar-archivo-2', '<< IR AL PRINCIPIO >>');
+    agregarImagen('https://i.imgur.com/J9qxClm.png');
+    agregarEnlace('https://drive.google.com/file/d/14enwoMjZd27S5ggHymvLWqBpJRFg7fW-', '<< DESCARGAR >>');
   } else {
     agregarImagen('https://i.imgur.com/lllc3pF.jpg');
-    agregarEnlace('?descargar-archivo-2#imagen-2', 'VER ARCHIVO');
+    agregarEnlace('?descargar-archivo-2#imagen-2', '<< VER ARCHIVO >>');
   }
 }
 
