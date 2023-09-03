@@ -28,10 +28,10 @@ if (urlActual.includes('?descargar-archivo-1')) {
     agregarEnlace('?descargar-archivo-1?imagen-3');
   } else if (urlActual.includes('imagen-3')) {
     agregarImagen('https://i.imgur.com/SYqTa4C.jpg');
-    agregarEnlace('?descargar-archivo-1');
+    agregarEnlace('?descargar-archivo-1?imagen-4');
   } else if (urlActual.includes('imagen-4')) {
     agregarImagen('https://i.imgur.com/PF2a6LN.jpg');
-    agregarEnlace('?descargar-archivo-1');
+    agregarEnlace('?descargar-archivo-1?imagen-5');
   } else if (urlActual.includes('imagen-5')) {
     agregarImagen('https://i.imgur.com/JnwiHJU.jpg');
     agregarEnlace('?descargar-archivo-1');
