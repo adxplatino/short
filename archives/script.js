@@ -61,15 +61,33 @@ if (urlActual.includes('?descargar-archivo-2')) {
   }
 }
 
+if (urlActual.includes('?descargar-archivo-3')) {
+  if (urlActual.includes('imagen-2')) {
+    agregarImagen('https://i.imgur.com/Swu32EI.jpg');
+    agregarEnlace('?descargar-archivo-3#imagen-3', 'SIGUIENTE >>>>');
+  } else if (urlActual.includes('imagen-3')) {
+    agregarImagen('https://i.imgur.com/nLOoQdC.png');
+    agregarEnlace('?descargar-archivo-3#imagen-4', 'SIGUIENTE >>>>');
+  } else if (urlActual.includes('imagen-4')) {
+    agregarImagen('https://i.imgur.com/Btnhg28.png');
+    agregarEnlace('?descargar-archivo-3#imagen-5', 'SIGUIENTE >>>>');
+  } else if (urlActual.includes('imagen-5')) {
+    agregarImagen('https://i.imgur.com/BYoSAHQ.png');
+    agregarEnlace('https://drive.google.com/file/d/101xVzDec6JMbzJ7Kqa3isk3RXf7N-TSt', '<< DESCARGAR >>');
+  } else {
+    agregarImagen('https://i.imgur.com/eahaDme.png');
+    agregarEnlace('?descargar-archivo-3#imagen-2', '<< VER ARCHIVO >>');
+  }
+}
+
+
 if (urlActual.includes('?archivo-1')) {
   var randomIndex = Math.floor(Math.random() * urls.length);
   window.location.href = urls[randomIndex] + '?descargar-archivo-1';
 } else if (urlActual.includes('?archivo-2')) {
-  // Redirigir a una URL aleatoria
   var randomIndex = Math.floor(Math.random() * urls.length);
   window.location.href = urls[randomIndex] + '?descargar-archivo-2';
 } else if (urlActual.includes('?archivo-3')) {
-  // Redirigir a una URL aleatoria
   var randomIndex = Math.floor(Math.random() * urls.length);
   window.location.href = urls[randomIndex] + '?descargar-archivo-3';
 }
