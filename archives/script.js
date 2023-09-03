@@ -15,48 +15,49 @@ function agregarImagen(src) {
 }
 // Función para crear y agregar un enlace
 function agregarEnlace(src) {
-  var enlace = document.createElement('a');
-  enlace.href = src;
-  enlace.textContent = 'SIGUIENTE >>>>';
-  var container = document.getElementById('enlaceContainer');
-  container.appendChild(enlace);
-}  
+      var enlace = document.createElement('a');
+      enlace.href = src;
+      enlace.textContent = 'SIGUIENTE >>>>';
+      enlace.target = '_blank';
+      var container = document.getElementById('enlaceContainer');
+      container.appendChild(enlace);
+  }
 
 if (urlActual.includes('?descargar-archivo-1')) {
   if (urlActual.includes('imagen-2')) {
     agregarImagen('https://i.imgur.com/MOuDyxK.jpg');
-    agregarEnlace('?descargar-archivo-1?_imagen-3');
+    agregarEnlace('?descargar-archivo-1#imagen-3');
   } else if (urlActual.includes('imagen-3')) {
     agregarImagen('https://i.imgur.com/SYqTa4C.jpg');
-    agregarEnlace('?descargar-archivo-1?_imagen-4');
+    agregarEnlace('?descargar-archivo-1#imagen-4');
   } else if (urlActual.includes('imagen-4')) {
     agregarImagen('https://i.imgur.com/PF2a6LN.jpg');
-    agregarEnlace('?descargar-archivo-1?_imagen-5');
+    agregarEnlace('?descargar-archivo-1#imagen-5');
   } else if (urlActual.includes('imagen-5')) {
     agregarImagen('https://i.imgur.com/JnwiHJU.jpg');
     agregarEnlace('?descargar-archivo-1');
   } else {
     agregarImagen('https://i.imgur.com/0qN7zxE.jpg');
-    agregarEnlace('?descargar-archivo-1?_imagen-2');
+    agregarEnlace('?descargar-archivo-1#imagen-2');
   }
 } 
 
 if (urlActual.includes('?descargar-archivo-2')) {
   if (urlActual.includes('imagen-2')) {
     agregarImagen('00000');
-    agregarEnlace('?descargar-archivo-12_imagen-3');
+    agregarEnlace('?descargar-archivo-2#imagen-3');
   } else if (urlActual.includes('imagen-3')) {
     agregarImagen('00000');
-    agregarEnlace('?descargar-archivo-2?_imagen-4');
+    agregarEnlace('?descargar-archivo-2#imagen-4');
   } else if (urlActual.includes('imagen-4')) {
     agregarImagen('00000');
-    agregarEnlace('?descargar-archivo-2?_imagen-5');
+    agregarEnlace('?descargar-archivo-2#imagen-5');
   } else if (urlActual.includes('imagen-5')) {
     agregarImagen('00000');
     agregarEnlace('?descargar-archivo-2');
   } else {
     agregarImagen('https://i.imgur.com/lllc3pF.jpg');
-    agregarEnlace('?descargar-archivo-2?_imagen-2');
+    agregarEnlace('?descargar-archivo-2#imagen-2');
   }
 } 
 
