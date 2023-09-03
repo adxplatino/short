@@ -24,13 +24,19 @@ function agregarEnlace(src) {
 
 if (urlActual.includes('?descargar-archivo-1')) {
   if (urlActual.includes('imagen-2')) {
-    agregarImagen('https://i.imgur.com/jtelAFz.jpeg');
+    agregarImagen('https://i.imgur.com/MOuDyxK.jpg');
     agregarEnlace('?descargar-archivo-1?imagen-3');
   } else if (urlActual.includes('imagen-3')) {
-    agregarImagen('https://i.imgur.com/QLcIa2c.jpeg');
+    agregarImagen('https://i.imgur.com/SYqTa4C.jpg');
+    agregarEnlace('?descargar-archivo-1');
+  } else if (urlActual.includes('imagen-4')) {
+    agregarImagen('https://i.imgur.com/PF2a6LN.jpg');
+    agregarEnlace('?descargar-archivo-1');
+  } else if (urlActual.includes('imagen-5')) {
+    agregarImagen('https://i.imgur.com/JnwiHJU.jpg');
     agregarEnlace('?descargar-archivo-1');
   } else {
-    agregarImagen('https://i.imgur.com/ne9KZtQ.jpeg');
+    agregarImagen('https://i.imgur.com/0qN7zxE.jpg');
     agregarEnlace('?descargar-archivo-1?imagen-2');
   }
 } 
