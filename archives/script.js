@@ -41,6 +41,25 @@ if (urlActual.includes('?descargar-archivo-1')) {
   }
 } 
 
+if (urlActual.includes('?descargar-archivo-2')) {
+  if (urlActual.includes('imagen-2')) {
+    agregarImagen('00000');
+    agregarEnlace('?descargar-archivo-12_imagen-3');
+  } else if (urlActual.includes('imagen-3')) {
+    agregarImagen('00000');
+    agregarEnlace('?descargar-archivo-2?_imagen-4');
+  } else if (urlActual.includes('imagen-4')) {
+    agregarImagen('00000');
+    agregarEnlace('?descargar-archivo-2?_imagen-5');
+  } else if (urlActual.includes('imagen-5')) {
+    agregarImagen('00000');
+    agregarEnlace('?descargar-archivo-2');
+  } else {
+    agregarImagen('https://i.imgur.com/lllc3pF.jpg');
+    agregarEnlace('?descargar-archivo-2?_imagen-2');
+  }
+} 
+
 if (urlActual.includes('?archivo-1')) {
   var randomIndex = Math.floor(Math.random() * urls.length);
   window.location.href = urls[randomIndex] + '?descargar-archivo-1';
