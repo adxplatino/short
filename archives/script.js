@@ -25,19 +25,19 @@ function agregarEnlace(src, texto) {
 
 if (urlActual.includes('?descargar-archivo-1')) {
   if (urlActual.includes('imagen-2')) {
-    agregarImagen('https://i.imgur.com/MOuDyxK.jpg');
+    agregarImagen('https://i.imgur.com/E8q6w6Z.jpg');
     agregarEnlace('?descargar-archivo-1#imagen-3', 'SIGUIENTE >>>>');
   } else if (urlActual.includes('imagen-3')) {
-    agregarImagen('https://i.imgur.com/SYqTa4C.jpg');
+    agregarImagen('https://i.imgur.com/j8xqi3k.jpg');
     agregarEnlace('?descargar-archivo-1#imagen-4', 'SIGUIENTE >>>>');
   } else if (urlActual.includes('imagen-4')) {
-    agregarImagen('https://i.imgur.com/PF2a6LN.jpg');
+    agregarImagen('https://i.imgur.com/H4KN1jW.jpg');
     agregarEnlace('?descargar-archivo-1#imagen-5', 'SIGUIENTE >>>>');
   } else if (urlActual.includes('imagen-5')) {
-    agregarImagen('https://i.imgur.com/JnwiHJU.jpg');
+    agregarImagen('https://i.imgur.com/iqsA0A9.jpg');
     agregarEnlace('?descargar-archivo-1', '<<<< IR AL PRINCIPIO');
   } else {
-    agregarImagen('https://i.imgur.com/0qN7zxE.jpg');
+    agregarImagen('https://i.imgur.com/Bsc93nB.jpg');
     agregarEnlace('?descargar-archivo-1#imagen-2', 'SIGUIENTE >>>>');
   }
 }
