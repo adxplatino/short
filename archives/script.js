@@ -45,7 +45,7 @@ if (urlActual.includes('?descargar-archivo-1')) {
 if (urlActual.includes('?descargar-archivo-2')) {
   if (urlActual.includes('imagen-2')) {
     agregarImagen('https://i.imgur.com/FN3CQI8.png');
-    agregarEnlace('https://drive.google.com/file/d/14enwoMjZd27S5ggHymvLWqBpJRFg7fW-', '< descargar >');
+    agregarEnlace('https://www.infoproyectos.com/?manual-electricidad-viviendas', '< descargar >');
   } else {
     agregarImagen('https://i.imgur.com/esVt08j.png');
     agregarEnlace('?descargar-archivo-2#imagen-2', '< ver archivo >');
@@ -55,7 +55,7 @@ if (urlActual.includes('?descargar-archivo-2')) {
 if (urlActual.includes('?descargar-archivo-3')) {
   if (urlActual.includes('imagen-2')) {
     agregarImagen('https://i.imgur.com/Swu32EI.jpg');
-    agregarEnlace('https://drive.google.com/file/d/101xVzDec6JMbzJ7Kqa3isk3RXf7N-TSt', '< descargar >');
+    agregarEnlace('https://www.infoproyectos.com/?manual-reparacion-de-celulares', '< descargar >');
   } else {
     agregarImagen('https://i.imgur.com/6tvCcK5.png');
     agregarEnlace('?descargar-archivo-3#imagen-2', '< ver archivo >');
