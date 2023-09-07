@@ -59,7 +59,7 @@ if (urlActual.includes('?descargar-archivo-4')) {
     agregarEnlace('https://www.infoproyectos.com/?mecanica-automotriz', '< Descargar >');
   } else {
     agregarImagen('https://i.imgur.com/0ZudrUt.png');
-    agregarEnlace('?descargar-archivo-3#item-2', '< Ver archivo >');
+    agregarEnlace('?descargar-archivo-4#item-2', '< Ver archivo >');
   }
 }
 
