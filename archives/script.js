@@ -24,52 +24,43 @@ function agregarEnlace(src, texto) {
   }
 
 if (urlActual.includes('?descargar-archivo-1')) {
-  if (urlActual.includes('imagen-2')) {
+  if (urlActual.includes('item-2')) {
     agregarImagen('https://i.imgur.com/E8q6w6Z.jpg');
-    agregarEnlace('?descargar-archivo-1#imagen-3', 'siguiente >');
-  } else if (urlActual.includes('imagen-3')) {
-    agregarImagen('https://i.imgur.com/j8xqi3k.jpg');
-    agregarEnlace('?descargar-archivo-1#imagen-4', 'siguiente >');
-  } else if (urlActual.includes('imagen-4')) {
-    agregarImagen('https://i.imgur.com/H4KN1jW.jpg');
-    agregarEnlace('?descargar-archivo-1#imagen-5', 'siguiente >');
-  } else if (urlActual.includes('imagen-5')) {
-    agregarImagen('https://i.imgur.com/iqsA0A9.jpg');
-    agregarEnlace('?descargar-archivo-1', '< ir al principio');
+    agregarEnlace('?descargar-archivo-1#imagen-3', '< Descargar >');
   } else {
-    agregarImagen('https://i.imgur.com/Bsc93nB.jpg');
-    agregarEnlace('?descargar-archivo-1#imagen-2', 'siguiente >');
+    agregarImagen('https://i.imgur.com/IuSBl4J.png');
+    agregarEnlace('?descargar-archivo-1#item-2', '< Ver archivo >');
   }
 }
 
 if (urlActual.includes('?descargar-archivo-2')) {
-  if (urlActual.includes('imagen-2')) {
+  if (urlActual.includes('item-2')) {
     agregarImagen('https://i.imgur.com/FN3CQI8.png');
-    agregarEnlace('https://www.infoproyectos.com/?manual-electricidad-viviendas', '< descargar >');
+    agregarEnlace('https://www.infoproyectos.com/?manual-electricidad-viviendas', '< Descargar >');
   } else {
     agregarImagen('https://i.imgur.com/esVt08j.png');
-    agregarEnlace('?descargar-archivo-2#imagen-2', '< ver archivo >');
+    agregarEnlace('?descargar-archivo-2#item-2', '< Ver archivo >');
   }
 }
 
 if (urlActual.includes('?descargar-archivo-3')) {
-  if (urlActual.includes('imagen-2')) {
+  if (urlActual.includes('item-2')) {
     agregarImagen('https://i.imgur.com/Swu32EI.jpg');
-    agregarEnlace('https://www.infoproyectos.com/?manual-reparacion-de-celulares', '< descargar >');
+    agregarEnlace('https://www.infoproyectos.com/?manual-reparacion-de-celulares', '< Descargar >');
   } else {
     agregarImagen('https://i.imgur.com/6tvCcK5.png');
-    agregarEnlace('?descargar-archivo-3#imagen-2', '< ver archivo >');
+    agregarEnlace('?descargar-archivo-3#item-2', '< Ver archivo >');
   }
 }
 
 
 if (urlActual.includes('?archivo-1')) {
-  var randomIndex = Math.floor(Math.random() * urls.length);
-  window.location.href = urls[randomIndex] + '?descargar-archivo-1';
+  var randomUrls = Math.floor(Math.random() * urls.length);
+  window.location.href = urls[randomUrls] + '?descargar-archivo-1';
 } else if (urlActual.includes('?archivo-2')) {
-  var randomIndex = Math.floor(Math.random() * urls.length);
-  window.location.href = urls[randomIndex] + '?descargar-archivo-2';
+  var randomUrls = Math.floor(Math.random() * urls.length);
+  window.location.href = urls[randomUrls] + '?descargar-archivo-2';
 } else if (urlActual.includes('?archivo-3')) {
-  var randomIndex = Math.floor(Math.random() * urls.length);
-  window.location.href = urls[randomIndex] + '?descargar-archivo-3';
+  var randomUrls = Math.floor(Math.random() * urls.length);
+  window.location.href = urls[randomUrls] + '?descargar-archivo-3';
 }
