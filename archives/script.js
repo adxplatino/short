@@ -25,8 +25,8 @@ function agregarEnlace(src, texto) {
 
 if (urlActual.includes('?descargar-archivo-1')) {
   if (urlActual.includes('item-2')) {
-    agregarImagen('https://i.imgur.com/E8q6w6Z.jpg');
-    agregarEnlace('?descargar-archivo-1#imagen-3', '< Descargar >');
+    agregarImagen('https://i.imgur.com/0pF1D15.png');
+    agregarEnlace('#', '< Descargar >');
   } else {
     agregarImagen('https://i.imgur.com/IuSBl4J.png');
     agregarEnlace('?descargar-archivo-1#item-2', '< Ver archivo >');
