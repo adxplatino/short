@@ -25,7 +25,7 @@ function agregarEnlace(src, texto) {
 
 if (urlActual.includes('?descargar-archivo-1')) {
   if (urlActual.includes('item-2')) {
-    agregarImagen('https://i.imgur.com/0pF1D15.png');
+    agregarImagen('https://i.imgur.com/8jrPIqH.png');
     agregarEnlace('#', '< Descargar >');
   } else {
     agregarImagen('https://i.imgur.com/IuSBl4J.png');
@@ -35,8 +35,8 @@ if (urlActual.includes('?descargar-archivo-1')) {
 
 if (urlActual.includes('?descargar-archivo-2')) {
   if (urlActual.includes('item-2')) {
-    agregarImagen('https://i.imgur.com/0pF1D15.png');
-    agregarEnlace('#', '< Descargar >');
+    agregarImagen('https://i.imgur.com/8jrPIqH.png');
+    agregarEnlace('https://www.infoproyectos.com/?manual-electricidad-viviendas', '< Descargar >');
   } else {
     agregarImagen('https://i.imgur.com/esVt08j.png');
     agregarEnlace('?descargar-archivo-2#item-2', '< Ver archivo >');
@@ -45,8 +45,8 @@ if (urlActual.includes('?descargar-archivo-2')) {
 
 if (urlActual.includes('?descargar-archivo-3')) {
   if (urlActual.includes('item-2')) {
-    agregarImagen('https://i.imgur.com/0pF1D15.png');
-    agregarEnlace('#', '< Descargar >');
+    agregarImagen('https://i.imgur.com/8jrPIqH.png');
+    agregarEnlace('https://www.infoproyectos.com/?manual-reparacion-de-celulares', '< Descargar >');
   } else {
     agregarImagen('https://i.imgur.com/6tvCcK5.png');
     agregarEnlace('?descargar-archivo-3#item-2', '< Ver archivo >');
@@ -55,8 +55,8 @@ if (urlActual.includes('?descargar-archivo-3')) {
 
 if (urlActual.includes('?descargar-archivo-4')) {
   if (urlActual.includes('item-2')) {
-    agregarImagen('https://i.imgur.com/0pF1D15.png');
-    agregarEnlace('#', '< Descargar >');
+    agregarImagen('https://i.imgur.com/8jrPIqH.png');
+    agregarEnlace('https://www.infoproyectos.com/?mecanica-automotriz', '< Descargar >');
   } else {
     agregarImagen('https://i.imgur.com/0ZudrUt.png');
     agregarEnlace('?descargar-archivo-4#item-2', '< Ver archivo >');
