@@ -1,7 +1,7 @@
 var urls = [
-  "https://www.infoproyectos.com/p/beneficios-estudiar-mba.html",
-  "https://www.infoproyectos.com/p/que-es-un-mba.html",
-  "https://www.infoproyectos.com/p/que-es-mba-para-que-sirve.html"
+  "https://www.infoproyectos.com/p/tips-choosing-right-insurance-company.html",
+  "https://www.infoproyectos.com/p/right-age-purchase-health-insurance.html",
+  "https://www.infoproyectos.com/p/cost-health-insurance-family.html"
 ];
 
 var urlActual = window.location.href;
