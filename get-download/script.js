@@ -32,7 +32,8 @@ var keyword = [
 "?como-ahorrar-electricidad",
 "?manual-instalacion-tableros-electricos",
 "?curso-reparacion-herramientas-electricas",
-"?mecanica-automotriz"
+"?mecanica-automotriz",
+"?contenido-vip"  
 ]
 
 var randomUrl = [
@@ -296,6 +297,14 @@ if (keyword.includes(extraida)) {
       document.getElementById("downsize").innerHTML = "(169 KB)";
       document.getElementById("LINK").setAttribute("href", "https://drive.google.com/file/d/1qTv9QhF5yg1acSZKnzecJBRhlm2X4rvW");
             
+       } else if (sessionStorage.getItem("setPagina") === "?contenido-vip") {
+      document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Contenido Vip Totalmente Gratis";
+      document.getElementById("downtitle").innerHTML = "❤️ ƈօռȶɛռɨɖօ ʋɨք ❤️";
+      document.getElementById("downtype").innerHTML = "mp4";
+      document.getElementById("downloads").innerHTML = "5684";
+      document.getElementById("downsize").innerHTML = "(100.5 MB)";
+      document.getElementById("LINK").setAttribute("href", "#");
+          
        } else {
         console.log("N/link");
       }
