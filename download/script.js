@@ -145,7 +145,7 @@ if (keyword.includes(extraida)) {
        } else if (sessionStorage.getItem("setPagina") === "?contenido-vip") {
       document.getElementById("donwload-title").innerHTML = "Descarga Aqui El Contenido Vip Totalmente Gratis";
       document.getElementById("downtitle").innerHTML = "❤️ ƈօռȶɛռɨɖօ ʋɨք ❤️";
-      document.getElementById("downtype").innerHTML = "PDF";
+      document.getElementById("downtype").innerHTML = "mp4";
       document.getElementById("downloads").innerHTML = "5684";
       document.getElementById("downsize").innerHTML = "(100.5 MB)";
       document.getElementById("LINK").setAttribute("href", "#");
