@@ -1,3 +1,4 @@
+function rotarPalabrasClave() {
 const palabrasClave = [
 "#gsc.tab=0&gsc.q=online%20mba%20programs%20for%20international%20students",
 "#gsc.tab=0&gsc.q=online%20business%20schools",
@@ -99,31 +100,15 @@ const palabrasClave = [
 "#gsc.tab=0&gsc.q=mba%20in%20hospital%20management",
 "#gsc.tab=0&gsc.q=mba%20in%20hospital%20administration",
 "#gsc.tab=0&gsc.q=mba%20in%20hospital%20and%20healthcare%20management"];
-        
+
+// Obtener un índice aleatorio
 const indiceAleatorio = Math.floor(Math.random() * palabrasClave.length); 
+// Obtener el enlace del botón
+const enlace = document.getElementById("randKey");
+// Agregar la palabra clave al enlace
+enlace.href = palabrasClave[indiceAleatorio];
+        }
 
-// Obtener el enlace del botón utilizando querySelectorAll
-const enlaces = document.querySelectorAll("#randKey");
-if (enlaces.length > 0) {
-    // Agregar la palabra clave aleatoria a todos los enlaces encontrados
-    enlaces.forEach((enlace) => {
-        enlace.href = palabrasClave[indiceAleatorio];
-    });
-}
-
-// Agregar un evento de clic a todos los botones encontrados
-const botones = document.querySelectorAll("#randKey");
-if (botones.length > 0) {
-    botones.forEach((boton) => {
-        boton.addEventListener("click", rotarPalabrasClave);
-    });
-}
-
-// Función para manejar el evento de clic
-function rotarPalabrasClave() {
-    const indiceAleatorio = Math.floor(Math.random() * palabrasClave.length);
-    // Actualizar todos los enlaces con la nueva palabra clave aleatoria
-    enlaces.forEach((enlace) => {
-        enlace.href = palabrasClave[indiceAleatorio];
-    }
-}  
+// Agregar un evento de clic al botón
+const boton = document.getElementById("randKey");
+boton.addEventListener("click", rotarPalabrasClave);
