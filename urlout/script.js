@@ -11,7 +11,7 @@ function obtenerURLParametro() {
 
 // Inicia el contador y redirige después de un tiempo determinado
 function iniciarContador() {
-  const tiempoEspera = 10; // Tiempo de espera en segundos
+  const tiempoEspera = 15; // Tiempo de espera en segundos
   const urlDestino = obtenerURLParametro();
   
   // Actualiza el contador en la página
